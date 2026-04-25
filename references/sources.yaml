@@ -1,0 +1,166 @@
+schema_version: 1
+skill: ai-act-compliance
+last_verified: 2026-04-25
+
+sources:
+  - id: ai-act-en-eurlex
+    title: "Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 — the Artificial Intelligence Act"
+    type: regulation-eu
+    url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng
+    download_urls:
+      - https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401689
+      - https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=OJ:L_202401689
+    accessed: 2026-04-25
+    sha256: null
+    license: public-domain-eu-law
+    binary_path: null
+    excerpt_paths:
+      - references/extracts/ai-act-art-3-definitions.md
+      - references/extracts/ai-act-art-5-prohibited.md
+      - references/extracts/ai-act-art-6-9-high-risk-classification.md
+      - references/extracts/ai-act-annex-iii-high-risk-list.md
+      - references/extracts/ai-act-art-26-27-deployer-fria.md
+      - references/extracts/ai-act-art-50-transparency.md
+      - references/extracts/ai-act-art-51-55-gpai.md
+    notes: |
+      The legally authoritative source. EUR-Lex serves the PDF asynchronously
+      (HTTP 202 on first request); the EUR-Lex URL is canonical for citation
+      regardless. See `ai-act-en-europarl-corrigendum` below for a working
+      copy that downloads reliably.
+
+  - id: ai-act-en-europarl-corrigendum
+    title: "European Parliament corrigendum P9_TA(2024)0138 — AI Act final consolidated text (working copy)"
+    type: parliamentary-text
+    url: https://www.europarl.europa.eu/doceo/document/TA-9-2024-0138-FNL-COR01_EN.pdf
+    accessed: 2026-04-25
+    sha256: 8486bdb2812e60e4142bcb72b4985636d24f4a17b7e872403e394f9f08f3a36e
+    license: public-domain-eu-doc
+    binary_path: not_in_repo/ai-act-en-europarl.pdf
+    excerpt_paths: []
+    notes: |
+      Working copy of the AI Act used to produce extracts in `references/extracts/`.
+      Functionally equivalent to the OJ:L_202401689 version published on 12 July 2024.
+      For legal citations, always reference the EUR-Lex URL above.
+
+  - id: gpai-code-of-practice-2025
+    title: "General-Purpose AI Code of Practice — Final version (July 2025)"
+    type: voluntary-code
+    url: https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai
+    alt_url: https://code-of-practice.ai/
+    accessed: 2026-04-25
+    sha256: null
+    license: public-domain-eu-doc
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Voluntary tool produced by independent experts in a multi-stakeholder
+      process, confirmed by the Commission and AI Board as adequate to
+      demonstrate compliance with Article 53 (and, for systemic-risk providers,
+      with Article 55 via the Safety and Security chapter). Three chapters:
+      Transparency, Copyright, Safety and Security. Adherence is voluntary.
+
+  - id: gpai-guidelines-commission-2025
+    title: "Guidelines on the scope of obligations for providers of general-purpose AI models — European Commission (July 2025)"
+    type: commission-guidelines
+    url: https://digital-strategy.ec.europa.eu/en/policies/guidelines-gpai-providers
+    accessed: 2026-04-25
+    sha256: null
+    license: public-domain-eu-doc
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Commission guidelines clarifying the scope of GPAI obligations under
+      Chapter V. Useful for borderline GPAI qualification cases.
+
+  - id: ai-act-service-desk
+    title: "EU AI Act Service Desk — official Compliance Checker, AI Act Explorer, helpdesk"
+    type: official-tooling
+    url: https://ai-act-service-desk.ec.europa.eu/
+    accessed: 2026-04-25
+    sha256: null
+    license: public-domain-eu-tool
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Hosted by DG CONNECT. The official self-assessment tool to clarify
+      obligations. Beta status as of 2026; the source-of-truth for borderline
+      classification questions of EU origin.
+
+  - id: cen-cenelec-jtc-21
+    title: "CEN-CENELEC JTC 21 — European AI standardisation work programme"
+    type: standardisation
+    url: https://jtc21.eu/
+    alt_url: https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation
+    accessed: 2026-04-25
+    sha256: null
+    license: public-domain-eu-tool
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      JTC 21 develops European harmonised standards in support of the AI Act.
+      First publications expected from 2026. Track for technical conformity
+      with Articles 9 (risk management), 10 (data governance), 13 (transparency),
+      14 (human oversight), 15 (accuracy/robustness/cybersecurity), 17 (QMS).
+      Notable in-progress: prEN 18286 — Quality management system for EU AI
+      Act regulatory purposes.
+      ISO/IEC 42001:2023 (AI management systems) was assessed by the AI Office
+      as not fully aligned with the AI Act and is not part of EU harmonisation.
+
+  - id: ai-act-explorer-eu
+    title: "AI Act Explorer — artificialintelligenceact.eu (third-party authoritative tracker)"
+    type: third-party-reference
+    url: https://artificialintelligenceact.eu/
+    accessed: 2026-04-25
+    license: cc-by-4.0
+    notes: |
+      Open-source AI Act tracker maintained by the Future of Life Institute.
+      Useful for full-text search, cross-references between articles,
+      considerations, and annexes. Also provides a non-official Compliance
+      Checker (different from the Commission's). Cite the Regulation, not
+      the tracker.
+
+  - id: edpb-edps-joint-opinions-ai
+    title: "EDPB / EDPS joint opinions on AI Act and AI deployment in EU bodies"
+    type: dpo-guidance
+    url: https://edpb.europa.eu/our-work-tools/our-documents_en
+    accessed: 2026-04-25
+    notes: |
+      EDPB and EDPS issue joint opinions and guidelines on AI deployment
+      with data-protection implications. Useful in conjunction with
+      Article 27 FRIA (combine with GDPR DPIA) and high-risk biometrics.
+
+# Recommended validation tools and resources (used to test the skill's outputs)
+validation_resources:
+  - id: ec-compliance-checker
+    title: EU Commission AI Act Compliance Checker
+    url: https://ai-act-service-desk.ec.europa.eu/en/eu-ai-act-compliance-checker
+    notes: Run skill outputs against the Commission's checker for cross-verification.
+
+  - id: aia-eu-checker
+    title: artificialintelligenceact.eu Compliance Checker
+    url: https://artificialintelligenceact.eu/assessment/eu-ai-act-compliance-checker/
+    notes: Independent self-assessment; useful as second opinion.
+
+  - id: holistic-readiness
+    title: Holistic AI Readiness Assessment
+    url: https://www.holisticai.com/eu-ai-act-readiness
+    notes: Vendor-provided readiness assessment; consider for benchmarking only.
+
+# Secondary sources to evaluate in future iterations
+secondary_sources_to_evaluate:
+  - id: edps-compass-2026-2027
+    title: "EDPS Compass under the AI Act 2026-2027"
+    url: https://www.edps.europa.eu/system/files/2026-03/26-03-17_edps-compass-under-ai-act-2026-2027_en.pdf
+    notes: EDPS guidance for EU institutions deploying AI; useful for public-sector deployer FRIA.
+
+  - id: ai-act-art-99-penalties
+    title: AI Act Article 99 — penalties detail
+    notes: Extract Article 99 separately for sanctions referencing across all tasks.
+
+  - id: ai-act-annex-i
+    title: AI Act Annex I — list of Union harmonisation legislation
+    notes: Needed for Article 6(1) high-risk classification (AI as safety component).
+
+  - id: ai-act-annex-iv
+    title: AI Act Annex IV — technical documentation contents
+    notes: Detailed contents for Article 11 technical documentation.

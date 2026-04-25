@@ -1,0 +1,19 @@
+# Source binaries (PDFs of the AI Act and related documents)
+# are NOT versioned. They live under not_in_repo/ at the user's machine,
+# downloaded by ./scripts/fetch-references.sh. URL + SHA256 are tracked
+# in references/sources.yaml.
+not_in_repo/
+*.pdf
+*.docx
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Output
+output/
+tmp/
+*.log
