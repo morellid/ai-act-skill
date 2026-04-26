@@ -46,6 +46,10 @@ TARGETS=()
 while [ $# -gt 0 ]; do
   case "$1" in
     --target)
+      if [ ${#TARGETS[@]} -gt 0 ]; then
+        echo "Error: install target already set; provide either --target or one custom path." >&2
+        exit 1
+      fi
       shift
       case "${1:-}" in
         claude) TARGETS=("$CLAUDE_DEFAULT") ;;
@@ -75,6 +79,13 @@ if [ ${#TARGETS[@]} -eq 0 ]; then
 fi
 
 # Sanity checks
+case "$MODE" in
+  symlink|copy) ;;
+  *)
+    echo "Error: unknown INSTALL_MODE '$MODE'. Use 'symlink' or 'copy'." >&2
+    exit 1
+    ;;
+esac
 if [ ! -f "$SOURCE/SKILL.md" ]; then
   echo "Error: SKILL.md not found at $SOURCE — is this the skill repository root?" >&2
   exit 1
@@ -91,6 +102,7 @@ native_target_path() {
   esac
 }
 
+# Returns 0 on a real install, 2 if the user declined to replace, 1 on error.
 install_one() {
   local target="$1"
   mkdir -p "$(dirname "$target")"
@@ -103,7 +115,7 @@ install_one() {
       read -r -p "Replace it? [y/N] " reply
       if [[ ! "$reply" =~ ^[Yy]$ ]]; then
         echo "Skipped: $target"
-        return 0
+        return 2
       fi
       rm -rf "$target"
     else
@@ -122,25 +134,28 @@ install_one() {
       rm -rf "$target/.git" "$target/not_in_repo" "$target/landing"
       echo "Copied to: $target"
       ;;
-    *)
-      echo "Error: unknown INSTALL_MODE '$MODE'. Use 'symlink' or 'copy'." >&2
-      return 1
-      ;;
   esac
 }
 
 INSTALLED_NATIVE=0
 INSTALLED_CUSTOM=0
 for t in "${TARGETS[@]}"; do
-  install_one "$t"
-  if native_target_path "$t"; then
-    INSTALLED_NATIVE=1
-  else
-    INSTALLED_CUSTOM=1
-  fi
+  rc=0
+  install_one "$t" || rc=$?
+  case "$rc" in
+    0)
+      if native_target_path "$t"; then INSTALLED_NATIVE=1; else INSTALLED_CUSTOM=1; fi
+      ;;
+    2) ;;  # user declined; leave flags alone
+    *) exit "$rc" ;;
+  esac
 done
 
 echo
+if [ "$INSTALLED_NATIVE" -eq 0 ] && [ "$INSTALLED_CUSTOM" -eq 0 ]; then
+  echo "No changes made."
+  exit 0
+fi
 echo "Installation complete."
 if [ "$INSTALLED_NATIVE" -eq 1 ]; then
   echo "Restart Claude Code or Codex so the new native skill install is discovered."
