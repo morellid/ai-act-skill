@@ -12,6 +12,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - `license: MIT` added to SKILL.md frontmatter (Codex picks this up; harmless on Claude Code).
 - `install.sh` / `uninstall.sh` rewritten to support `--target claude | codex | both`.
 - README reorganised with side-by-side install instructions for both agents and a Codex-specific `$skill-installer` option.
+- **Cross-agent reach via AGENTS.md**: added `AGENTS.md` at the repository root, the open standard now governed by the Linux Foundation Agentic AI Foundation. This unlocks native discovery on Codex, Cursor, Windsurf, GitHub Copilot, Devin, Amp, Antigravity, and other AGENTS.md-aware tools (60 000+ repos).
+- **Adapters** for agents with different native formats: `adapters/copilot-instructions.md` (GitHub Copilot), `adapters/cursor-rule.mdc` (Cursor MDC rule). See `adapters/README.md` for the vendor + adapt pattern.
+- README "Option D — use from another agent" section pointing to AGENTS.md vendor pattern and `adapters/`.
 
 ### To do
 - Tag and publish v0.1.0 release on GitHub

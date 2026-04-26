@@ -1,0 +1,45 @@
+---
+description: EU AI Act compliance support — classify systems, check obligations, draft documentation. Use when discussing AI systems built or used in the EU.
+globs:
+alwaysApply: false
+---
+
+# AI Act Compliance — Cursor Rule
+
+Drop this file into `.cursor/rules/ai-act-compliance.mdc` of your project to give Cursor structured guidance for AI Act questions. Vendor the full skill at `.vendor/ai-act-skill/` (see <https://github.com/morellid/ai-act-skill>).
+
+## Workflow
+
+When the user discusses AI systems built for or used in the EU, follow this order:
+
+1. **Classify** — read `.vendor/ai-act-skill/tasks/classify-system.md`. Determine: in scope? prohibited? high-risk? limited (Art. 50)? GPAI? Identify role: provider / deployer / importer / distributor.
+2. **Check Article 5 prohibitions** — `.vendor/ai-act-skill/tasks/check-prohibited-practices.md`. If a prohibition applies, stop and recommend redesign.
+3. **Route to obligations**:
+   - High-risk provider: `.vendor/ai-act-skill/tasks/check-high-risk-provider.md` (Art. 8–22)
+   - High-risk deployer: `.vendor/ai-act-skill/tasks/check-deployer-obligations.md` (Art. 26–27, incl. FRIA)
+   - GPAI provider: `.vendor/ai-act-skill/tasks/check-gpai-provider.md` (Art. 51–55, 10²⁵ FLOPs threshold)
+   - Article 50 transparency: `.vendor/ai-act-skill/tasks/check-transparency.md`
+
+## Source grounding
+
+- Article extracts: `.vendor/ai-act-skill/references/extracts/`
+- Sources catalogue: `@references/sources.yaml`
+- Use `@file` references in Cursor to pull specific extracts into context when needed.
+
+## Non-negotiable rules
+
+- Cite specific articles for every normative claim (e.g., "Art. 5(1)(f)", "Annex III area 4(b)").
+- If a fact is not in the extracts, do not fabricate it.
+- Always end AI Act analysis with: "support tool, not legal advice; qualified counsel review required".
+- Penalties under Article 99 reach EUR 35 million or 7% of global turnover.
+
+## Phased application calendar
+
+- **2 Feb 2025**: prohibitions (Art. 5), AI literacy (Art. 4) — IN FORCE
+- **2 Aug 2025**: GPAI obligations (Ch. V), penalties — IN FORCE
+- **2 Aug 2026**: most obligations including high-risk Annex III, Art. 50 transparency
+- **2 Aug 2027**: high-risk under Art. 6(1) (Annex I products)
+
+## Limits of this adapter
+
+This Cursor rule provides high-level routing. For deep agentic execution of the six tasks (with internal sub-task loading and citation generation), use Claude Code or Codex with the native skill installation. The full skill repository is at <https://github.com/morellid/ai-act-skill>.

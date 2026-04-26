@@ -54,7 +54,30 @@ Inside a Codex session:
 $skill-installer https://github.com/morellid/ai-act-skill
 ```
 
-### Option D — download a release zip
+### Option D — use from another agent (Cursor, Windsurf, GitHub Copilot, Devin, Amp, …)
+
+Many agents read `AGENTS.md` natively (60 000+ repositories already do; the format is governed by the Linux Foundation Agentic AI Foundation). For those agents, vendor this skill into your own project and add a short pointer in your project's `AGENTS.md`:
+
+```bash
+# In YOUR project repository:
+git submodule add https://github.com/morellid/ai-act-skill.git .vendor/ai-act-skill
+```
+
+Then add to your project's `AGENTS.md`:
+
+```markdown
+## EU AI Act compliance
+
+When the user asks AI Act questions, walk through the tasks at
+`.vendor/ai-act-skill/tasks/` (classify first, then check prohibitions,
+then route to provider/deployer/GPAI/transparency). Source extracts at
+`.vendor/ai-act-skill/references/extracts/`. Cite articles precisely;
+always close with the "support tool, not legal advice" disclaimer.
+```
+
+For per-agent adapters (Cursor MDC rule, GitHub Copilot instructions), see [`adapters/`](adapters/) in this repository.
+
+### Option E — download a release zip
 
 ```bash
 mkdir -p ~/.claude/skills    # or ~/.agents/skills for Codex
@@ -106,8 +129,13 @@ ai-act-skill/
 ├── install.sh                   ← installer (Claude Code / Codex / both)
 ├── uninstall.sh
 ├── .gitignore
+├── AGENTS.md                    ← cross-agent guidance (Codex, Cursor, Windsurf, Copilot, …)
 ├── agents/                      ← agent-specific UI metadata
 │   └── openai.yaml              ← Codex display name + default prompt
+├── adapters/                    ← drop-in adapters for non-skill formats
+│   ├── copilot-instructions.md  ← GitHub Copilot
+│   ├── cursor-rule.mdc          ← Cursor IDE rule
+│   └── README.md                ← how to vendor + adapt
 ├── tasks/                       ← detailed sub-task instructions
 │   ├── classify-system.md
 │   ├── check-prohibited-practices.md
