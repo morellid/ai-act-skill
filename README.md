@@ -156,7 +156,6 @@ ai-act-skill/
 ├── examples/                    ← test fixtures
 │   ├── classify-customer-service-chatbot/
 │   └── classify-hr-emotion-recognition/
-├── landing/                     ← Vercel landing page (aiact.davidemorelli.it)
 └── scripts/
     ├── validate.sh              ← skill self-check
     └── fetch-references.sh      ← downloads source PDFs and verifies hashes
