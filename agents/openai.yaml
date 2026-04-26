@@ -1,0 +1,9 @@
+# OpenAI Codex skill metadata.
+# Used by Codex CLI / IDE for the skill picker (UI display).
+# Not used by Claude Code (which reads SKILL.md frontmatter directly).
+display_name: AI Act Compliance
+short_description: EU AI Act compliance support for engineering teams. Classify systems, check obligations, draft documentation. Article-level citations.
+default_prompt: |
+  Run an AI Act classification on this system. Identify the role
+  (provider / deployer / importer / distributor), risk tier, and
+  applicable obligations. Cite the specific articles.

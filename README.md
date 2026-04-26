@@ -1,12 +1,12 @@
 # AI Act Compliance Skill
 
-> A Claude Code skill for compliance work on **Regulation (EU) 2024/1689 — the EU Artificial Intelligence Act**.
+> An agent skill for compliance work on **Regulation (EU) 2024/1689 — the EU Artificial Intelligence Act**. Compatible with both **Anthropic Claude Code** and **OpenAI Codex**.
 >
 > **Status**: alpha (v0.1.0). The AI Act is recent legislation with phased application; this skill tracks the regulation as adopted and the early Commission guidelines (2025). Validate against the latest Official Journal text before use in formal advice.
 
 ## What is this?
 
-A self-contained Claude Code skill that helps compliance teams, AI engineers, and consultants run common tasks on the EU AI Act:
+A self-contained agent skill that helps compliance teams, AI engineers, and consultants run common tasks on the EU AI Act:
 
 - Classify an AI system or model (in scope? prohibited? high-risk? limited? GPAI? systemic risk?)
 - Identify roles (provider, deployer, importer, distributor)
@@ -17,47 +17,69 @@ A self-contained Claude Code skill that helps compliance teams, AI engineers, an
 
 ## Installation
 
-The repository **is** the skill. The simplest way to install is to drop it into the Claude Code skills directory.
+The repository **is** the skill. Drop it into your agent's skills directory. The skill follows the `SKILL.md` + frontmatter convention used by both Claude Code and Codex.
+
+| Agent | Skills directory |
+|---|---|
+| Anthropic Claude Code | `~/.claude/skills/ai-act-compliance/` |
+| OpenAI Codex | `~/.agents/skills/ai-act-compliance/` |
 
 ### Option A — install via the helper script (recommended)
 
 ```bash
 git clone https://github.com/morellid/ai-act-skill.git
 cd ai-act-skill
-./install.sh
+./install.sh                       # default: Claude Code
+./install.sh --target codex        # Codex only
+./install.sh --target both         # both agents
 ```
 
-The script symlinks the repository into `~/.claude/skills/ai-act-compliance` (or copies, if you set `INSTALL_MODE=copy`). With a symlink, `git pull` later upgrades the skill in place.
+The script symlinks the repository into the chosen target(s) by default (so `git pull` upgrades the installed skill in place). Set `INSTALL_MODE=copy` for a snapshot copy.
 
 ### Option B — clone directly into the skills directory
 
 ```bash
+# Claude Code
 git clone https://github.com/morellid/ai-act-skill.git ~/.claude/skills/ai-act-compliance
+
+# Codex
+git clone https://github.com/morellid/ai-act-skill.git ~/.agents/skills/ai-act-compliance
 ```
 
-### Option C — download a release zip
+### Option C — Codex `$skill-installer`
+
+Inside a Codex session:
+
+```
+$skill-installer https://github.com/morellid/ai-act-skill
+```
+
+### Option D — download a release zip
 
 ```bash
-mkdir -p ~/.claude/skills
+mkdir -p ~/.claude/skills    # or ~/.agents/skills for Codex
 curl -L https://github.com/morellid/ai-act-skill/archive/refs/tags/v0.1.0.zip \
   -o /tmp/ai-act-skill.zip
 unzip -d ~/.claude/skills /tmp/ai-act-skill.zip
 mv ~/.claude/skills/ai-act-skill-* ~/.claude/skills/ai-act-compliance
 ```
 
-After installation, restart Claude Code so the new skill is detected.
+After installation, restart your agent (Claude Code or Codex) so the new skill is discovered.
 
 ### Uninstall
 
 ```bash
-./uninstall.sh
+./uninstall.sh                     # default: Claude Code
+./uninstall.sh --target codex      # Codex only
+./uninstall.sh --target both       # both agents
 # or manually:
 rm -rf ~/.claude/skills/ai-act-compliance
+rm -rf ~/.agents/skills/ai-act-compliance
 ```
 
 ## How to use it (once installed)
 
-In any Claude Code session, ask questions or give tasks that touch the AI Act:
+In any Claude Code or Codex session, ask questions or give tasks that touch the AI Act:
 
 > "Classify this system under the AI Act: it's a CV-screening tool for HR..."
 >
@@ -65,19 +87,27 @@ In any Claude Code session, ask questions or give tasks that touch the AI Act:
 >
 > "Check our GPAI model obligations — we're at 5×10²⁵ FLOPs of training compute."
 
-Claude will load this skill, route to the right sub-task, and produce a structured analysis with citations.
+The agent will load this skill, route to the right sub-task, and produce a structured analysis with citations.
+
+In Codex you can also invoke it explicitly:
+
+```
+/skills ai-act-compliance
+```
 
 ## Repository layout
 
 ```
 ai-act-skill/
-├── SKILL.md                     ← the skill entry point (Claude reads this)
+├── SKILL.md                     ← the skill entry point (agent reads this)
 ├── README.md                    ← this file (humans read this)
 ├── LICENSE                      ← MIT
 ├── CHANGELOG.md
-├── install.sh                   ← convenience installer
+├── install.sh                   ← installer (Claude Code / Codex / both)
 ├── uninstall.sh
 ├── .gitignore
+├── agents/                      ← agent-specific UI metadata
+│   └── openai.yaml              ← Codex display name + default prompt
 ├── tasks/                       ← detailed sub-task instructions
 │   ├── classify-system.md
 │   ├── check-prohibited-practices.md
@@ -98,6 +128,7 @@ ai-act-skill/
 ├── examples/                    ← test fixtures
 │   ├── classify-customer-service-chatbot/
 │   └── classify-hr-emotion-recognition/
+├── landing/                     ← Vercel landing page (aiact.davidemorelli.it)
 └── scripts/
     ├── validate.sh              ← skill self-check
     └── fetch-references.sh      ← downloads source PDFs and verifies hashes

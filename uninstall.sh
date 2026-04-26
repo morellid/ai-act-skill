@@ -1,27 +1,57 @@
 #!/usr/bin/env bash
-# Uninstall the AI Act Compliance skill from Claude Code's skills directory.
+# Uninstall the AI Act Compliance skill.
 #
 # Usage:
 #   ./uninstall.sh                       # default: ~/.claude/skills/ai-act-compliance
-#   ./uninstall.sh /custom/path          # custom target
+#   ./uninstall.sh --target claude       # ~/.claude/skills/ai-act-compliance
+#   ./uninstall.sh --target codex        # ~/.agents/skills/ai-act-compliance
+#   ./uninstall.sh --target both         # both
+#   ./uninstall.sh /custom/path          # custom path
 
 set -euo pipefail
 
-DEFAULT_TARGET="${HOME}/.claude/skills/ai-act-compliance"
-TARGET="${1:-$DEFAULT_TARGET}"
+CLAUDE_DEFAULT="${HOME}/.claude/skills/ai-act-compliance"
+CODEX_DEFAULT="${HOME}/.agents/skills/ai-act-compliance"
 
-if [ ! -e "$TARGET" ] && [ ! -L "$TARGET" ]; then
-  echo "Nothing to remove at $TARGET."
-  exit 0
+TARGETS=()
+if [ $# -eq 0 ]; then
+  TARGETS=("$CLAUDE_DEFAULT")
+else
+  case "$1" in
+    --target)
+      shift
+      case "${1:-}" in
+        claude) TARGETS=("$CLAUDE_DEFAULT") ;;
+        codex)  TARGETS=("$CODEX_DEFAULT") ;;
+        both)   TARGETS=("$CLAUDE_DEFAULT" "$CODEX_DEFAULT") ;;
+        *)
+          echo "Error: --target accepts 'claude', 'codex', or 'both'." >&2
+          exit 1
+          ;;
+      esac
+      ;;
+    *) TARGETS=("$1") ;;
+  esac
 fi
 
-echo "About to remove: $TARGET"
-read -r -p "Proceed? [y/N] " reply
-if [[ ! "$reply" =~ ^[Yy]$ ]]; then
-  echo "Aborted."
-  exit 1
-fi
+remove_one() {
+  local target="$1"
+  if [ ! -e "$target" ] && [ ! -L "$target" ]; then
+    echo "Nothing to remove at $target."
+    return 0
+  fi
+  echo "About to remove: $target"
+  read -r -p "Proceed? [y/N] " reply
+  if [[ ! "$reply" =~ ^[Yy]$ ]]; then
+    echo "Skipped: $target"
+    return 0
+  fi
+  rm -rf "$target"
+  echo "Removed: $target"
+}
 
-rm -rf "$TARGET"
-echo "Removed: $TARGET"
-echo "Restart Claude Code so the change is detected."
+for t in "${TARGETS[@]}"; do
+  remove_one "$t"
+done
+
+echo "Restart your agent so the change is detected."

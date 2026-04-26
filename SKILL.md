@@ -1,6 +1,7 @@
 ---
 name: ai-act-compliance
 description: Supports compliance with the EU Artificial Intelligence Act (Regulation (EU) 2024/1689). Use when the user needs to classify an AI system under the AI Act risk categories (prohibited, high-risk, limited, minimal, GPAI), check provider or deployer obligations for high-risk systems, evaluate GPAI model obligations including systemic risk thresholds, verify transparency obligations under Article 50, or run a fundamental rights impact assessment (FRIA) under Article 27. Target users are AI system providers, deployers, importers, distributors, EU consultants on AI compliance, and engineers building AI products for the EU market.
+license: MIT
 ---
 
 # AI Act Compliance

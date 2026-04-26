@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+### Added (post v0.1.0-alpha)
+- **Codex compatibility**: skill now works on OpenAI Codex (`~/.agents/skills/ai-act-compliance/`) in addition to Claude Code (`~/.claude/skills/ai-act-compliance/`). Same `SKILL.md` + frontmatter format used by both agents.
+- `agents/openai.yaml` with Codex UI metadata (display_name, short_description, default_prompt).
+- `license: MIT` added to SKILL.md frontmatter (Codex picks this up; harmless on Claude Code).
+- `install.sh` / `uninstall.sh` rewritten to support `--target claude | codex | both`.
+- README reorganised with side-by-side install instructions for both agents and a Codex-specific `$skill-installer` option.
+
 ### To do
 - Tag and publish v0.1.0 release on GitHub
 - Add a `check-importer-distributor` task (Articles 23–24)
@@ -13,6 +20,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - Add a third example covering a GPAI provider classification
 - Translate examples into machine-readable test cases for `scripts/validate.sh` to assert against
 - Fetch and hash the Commission's GPAI Code of Practice PDF when a stable URL is available
+- ChatGPT for Teams distribution: package as Custom GPT (instructions + knowledge files + actions) — see `notes/chatgpt-team-distribution.md` (to be written).
 
 ## [0.1.0-alpha] - 2026-04-25
 
