@@ -1,8 +1,20 @@
 # AI Act Compliance Skill
 
-> An agent skill for compliance work on **Regulation (EU) 2024/1689 — the EU Artificial Intelligence Act**. Compatible with both **Anthropic Claude Code** and **OpenAI Codex**.
+> An agent skill for compliance work on **Regulation (EU) 2024/1689 — the EU Artificial Intelligence Act**. Compatible with **Anthropic Claude Code**, **OpenAI Codex**, and any **AGENTS.md**-aware coding agent (Cursor, Windsurf, GitHub Copilot, Devin, Amp).
 >
-> **Status**: alpha (v0.1.0). The AI Act is recent legislation with phased application; this skill tracks the regulation as adopted and the early Commission guidelines (2025). Validate against the latest Official Journal text before use in formal advice.
+> **Status: v0.1.0-alpha — public, usable, seeking validators.** Released ~14 weeks before the 2 August 2026 enforcement date for high-risk systems and Article 50 transparency. The content is grounded in the Official Journal text and the 2025 Commission guidelines, but external review is wide open. If you are a compliance officer, EU AI law expert, or engineering lead with hands-on AI Act experience: please open issues, suggest corrections, or email `hello@davidemorelli.it`. Acknowledged contributors get credit in the README and a citation when the skill ships v0.1.0 stable.
+
+## Looking for validators
+
+Specifically, we are interested in feedback on:
+
+- **Article 5 borderlines**: workplace emotion recognition, biometric categorisation carve-outs, real-time RBI law-enforcement exceptions
+- **Annex III scope edges**: where high-risk classification is ambiguous in real systems
+- **Article 27 FRIA**: who has actually drafted one for a public-sector deployer; what worked, what did not
+- **GPAI thresholds**: how the 10²⁵ FLOPs criterion is being interpreted for fine-tuned and downstream-adapted models
+- **Article 50 transparency**: implementation patterns for chatbot disclosure, synthetic-content marking, deep-fake notices
+
+Open an issue at <https://github.com/morellid/ai-act-skill/issues>, or send a private note to `hello@davidemorelli.it`.
 
 ## What is this?
 
