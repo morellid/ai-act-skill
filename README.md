@@ -36,7 +36,7 @@ The repository **is** the skill. Drop it into your agent's skills directory. The
 | Anthropic Claude Code | `~/.claude/skills/ai-act-compliance/` |
 | OpenAI Codex | `~/.agents/skills/ai-act-compliance/` |
 
-### Option A — install via the helper script (recommended)
+### Option A — install via the helper script (Claude Code / Codex only)
 
 ```bash
 git clone https://github.com/morellid/ai-act-skill.git
@@ -44,9 +44,12 @@ cd ai-act-skill
 ./install.sh                       # default: Claude Code
 ./install.sh --target codex        # Codex only
 ./install.sh --target both         # both agents
+./install.sh --force --target both # replace existing installs without prompting
 ```
 
-The script symlinks the repository into the chosen target(s) by default (so `git pull` upgrades the installed skill in place). Set `INSTALL_MODE=copy` for a snapshot copy.
+The script symlinks the repository into the chosen native target(s) by default (so `git pull` upgrades the installed skill in place). Set `INSTALL_MODE=copy` for a snapshot copy.
+
+This helper is for **native Claude Code / Codex skill installs**. If you want to vendor the repo into a project for Cursor, Windsurf, GitHub Copilot, Devin, Amp, or another AGENTS.md-aware harness, use **Option D**. A custom-path run such as `./install.sh /path/to/project/.vendor/ai-act-skill` only copies/symlinks the repo; it does **not** create the project-local `AGENTS.md` pointer or per-agent adapter files.
 
 ### Option B — clone directly into the skills directory
 
