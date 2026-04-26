@@ -22,7 +22,7 @@ The repository **is** the skill. The simplest way to install is to drop it into 
 ### Option A — install via the helper script (recommended)
 
 ```bash
-git clone https://github.com/davidemorelli/ai-act-skill.git
+git clone https://github.com/morellid/ai-act-skill.git
 cd ai-act-skill
 ./install.sh
 ```
@@ -32,14 +32,14 @@ The script symlinks the repository into `~/.claude/skills/ai-act-compliance` (or
 ### Option B — clone directly into the skills directory
 
 ```bash
-git clone https://github.com/davidemorelli/ai-act-skill.git ~/.claude/skills/ai-act-compliance
+git clone https://github.com/morellid/ai-act-skill.git ~/.claude/skills/ai-act-compliance
 ```
 
 ### Option C — download a release zip
 
 ```bash
 mkdir -p ~/.claude/skills
-curl -L https://github.com/davidemorelli/ai-act-skill/archive/refs/tags/v0.1.0.zip \
+curl -L https://github.com/morellid/ai-act-skill/archive/refs/tags/v0.1.0.zip \
   -o /tmp/ai-act-skill.zip
 unzip -d ~/.claude/skills /tmp/ai-act-skill.zip
 mv ~/.claude/skills/ai-act-skill-* ~/.claude/skills/ai-act-compliance
