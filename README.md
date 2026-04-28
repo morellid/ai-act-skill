@@ -203,6 +203,10 @@ Issues and PRs welcome. Two non-negotiable principles:
 1. **Only official sources** — every normative claim must trace back to the Regulation, an EU Commission delegated/implementing act, an EU AI Office guideline, an EDPB joint guideline, or a published harmonised standard. Hashes in `references/sources.yaml`.
 2. **Disclaimer always present** — the skill is a support tool, never a substitute for legal counsel or notified body assessment.
 
+## Acknowledgements
+
+- **Richard B.** ([LinkedIn](https://www.linkedin.com/in/richard-b-42469439b/)) — flagged the Digital Omnibus on AI timeline change (Commission proposal 19 November 2025; Council and Parliament alignment in March 2026) before v0.1.0 stable, prompting the pending-delay disclosure pass across the skill and the landing page.
+
 ## Licence
 
 MIT — see [LICENSE](LICENSE).
