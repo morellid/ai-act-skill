@@ -1,6 +1,6 @@
 schema_version: 1
 skill: ai-act-compliance
-last_verified: 2026-04-25
+last_verified: 2026-04-28
 
 sources:
   - id: ai-act-en-eurlex
@@ -128,6 +128,40 @@ sources:
       EDPB and EDPS issue joint opinions and guidelines on AI deployment
       with data-protection implications. Useful in conjunction with
       Article 27 FRIA (combine with GDPR DPIA) and high-risk biometrics.
+
+  - id: digital-omnibus-ai-2025
+    title: "Digital Omnibus on AI — Commission proposal to amend Regulation (EU) 2024/1689 (19 November 2025)"
+    type: legislative-proposal
+    url: https://www.europarl.europa.eu/legislative-train/package-digital-package/file-digital-omnibus-on-ai
+    alt_url: https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-ai
+    accessed: 2026-04-28
+    sha256: null
+    license: public-domain-eu-doc
+    binary_path: null
+    excerpt_paths: []
+    notes: |
+      Commission proposal of 19 November 2025 to delay the application
+      of high-risk AI obligations under Regulation (EU) 2024/1689.
+      Status as of 2026-04-28: in trilogue, NOT yet adopted.
+      Council general approach: 13 March 2026.
+      European Parliament negotiating position: 26 March 2026.
+      Both align on fixed deadlines:
+        - 2 December 2027 — stand-alone high-risk AI systems (Annex III)
+                            and Article 50 transparency
+        - 2 August 2028  — high-risk AI systems embedded as safety
+                            components in Annex I products
+      Article 4 (AI literacy) and Article 5 (prohibitions) — in force
+      since 2 February 2025 — and Chapter V GPAI obligations — in
+      force since 2 August 2025 — are NOT affected.
+      Until the amendment is published in the Official Journal, the
+      original Art. 113 dates of Regulation (EU) 2024/1689 remain
+      legally binding. Promote to a primary citable source with a
+      textual extract once adopted.
+      Tracked by:
+        - Parliament IPR press release 26 March 2026:
+          https://www.europarl.europa.eu/news/en/press-room/20260323IPR38829/artificial-intelligence-act-delayed-application-ban-on-nudifier-apps
+        - IAPP analysis:
+          https://iapp.org/news/a/eu-digital-omnibus-analysis-of-key-changes
 
 # Recommended validation tools and resources (used to test the skill's outputs)
 validation_resources:

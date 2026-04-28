@@ -2,7 +2,9 @@
 
 > An agent skill for compliance work on **Regulation (EU) 2024/1689 — the EU Artificial Intelligence Act**. Compatible with **Anthropic Claude Code**, **OpenAI Codex**, and any **AGENTS.md**-aware coding agent (Cursor, Windsurf, GitHub Copilot, Devin, Amp).
 >
-> **Status: v0.1.0-alpha — public, usable, seeking validators.** Released ~14 weeks before the 2 August 2026 enforcement date for high-risk systems and Article 50 transparency. The content is grounded in the Official Journal text and the 2025 Commission guidelines, but external review is wide open. If you are a compliance officer, EU AI law expert, or engineering lead with hands-on AI Act experience: please open issues, suggest corrections, or email `ai@davidemorelli.it`. Acknowledged contributors get credit in the README and a citation when the skill ships v0.1.0 stable.
+> **Status: v0.1.0-alpha — public, usable, seeking validators.** The content is grounded in the Official Journal text and the 2025 Commission guidelines, but external review is wide open. If you are a compliance officer, EU AI law expert, or engineering lead with hands-on AI Act experience: please open issues, suggest corrections, or email `ai@davidemorelli.it`. Acknowledged contributors get credit in the README and a citation when the skill ships v0.1.0 stable.
+>
+> **Pending: Digital Omnibus on AI.** The Commission proposed (19 November 2025) delaying the application of high-risk obligations. Council (13 March 2026) and Parliament (26 March 2026) have aligned in trilogue on **2 December 2027** for stand-alone high-risk (Annex III) systems and **2 August 2028** for high-risk safety components of Annex I products. The proposal is **not yet adopted**; until it is, the legally binding deadline for most high-risk obligations and Article 50 transparency remains 2 August 2026. Article 4 (AI literacy) and Article 5 (prohibitions) — in force since 2 February 2025 — and Chapter V GPAI obligations — in force since 2 August 2025 — are not affected by the Omnibus.
 
 ## Looking for validators
 

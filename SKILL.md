@@ -31,6 +31,8 @@ Use when someone needs to:
 
 This skill is a support tool for compliance work, not a substitute for qualified legal or technical counsel. The AI Act is recent legislation with phased application (most obligations between 2 February 2025 and 2 August 2027) and the harmonised standards under preparation by CEN-CENELEC JTC 21 are not yet published. **Outputs require review by competent counsel and, for high-risk systems, by a notified body where applicable.** Penalties under Article 99 reach EUR 35 million or 7% of total worldwide annual turnover for prohibited-practice violations.
 
+**Pending: Digital Omnibus on AI.** The Commission's 19 November 2025 proposal would delay the application of high-risk obligations to 2 December 2027 (Annex III stand-alone) and 2 August 2028 (Annex I embedded). Trilogue is in progress as of late March 2026; the proposal is **not yet adopted**. Until adoption, the binding deadlines remain the original Article 113 calendar. Article 4 (AI literacy) and Article 5 (prohibitions) — already in force since 2 February 2025 — and Chapter V GPAI obligations — in force since 2 August 2025 — are not affected. Skill outputs should mention the pending change whenever 2 August 2026 high-risk or Article 50 deadlines are cited.
+
 ## Sub-tasks
 
 Based on the user's request, load the relevant task file:
@@ -50,7 +52,7 @@ If the request is generic ("help me with the AI Act"), start with classification
 2. Run classification first (`classify-system.md`) unless explicitly stated.
 3. Based on classification, route to the relevant obligations task.
 4. For each obligation, capture: applicable? met? gap analysis? remediation steps?
-5. Always include applicable dates of application (the AI Act phases obligations; some rules already in force, others up to August 2027).
+5. Always include applicable dates of application (the AI Act phases obligations; some rules already in force, others up to August 2027). Where the cited deadline is one that the **Digital Omnibus on AI** (in trilogue, not yet adopted as of late March 2026) would shift — i.e., 2 August 2026 high-risk Annex III and Article 50 transparency, and 2 August 2027 Annex I embedded — flag the pending move to 2 December 2027 / 2 August 2028 in the output.
 6. Conclude with the appropriate disclaimer and a call to legal review.
 
 ## Sources

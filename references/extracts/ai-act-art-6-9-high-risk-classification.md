@@ -81,8 +81,8 @@ With a view to eliminating or reducing risks related to the use of the high-risk
 
 ## Notes for the skill
 
-- Article 6(1) (Annex I products with third-party CA) applies from **2 August 2027**.
-- Article 6(2) (Annex III) applies from **2 August 2026**.
+- Article 6(1) (Annex I products with third-party CA) applies from **2 August 2027** *(pending: Digital Omnibus on AI proposes 2 August 2028; in trilogue, not yet adopted)*.
+- Article 6(2) (Annex III) applies from **2 August 2026** *(pending: Digital Omnibus on AI proposes 2 December 2027; in trilogue, not yet adopted)*.
 - Article 6(3) derogation requires **documented assessment** and **registration in the EU database** (Art. 49(2)). It is not self-applying.
 - The **profiling exception** in Art. 6(3) last subparagraph means: any Annex III system that performs profiling on natural persons is high-risk regardless of the four conditions.
 - Risk management is **lifecycle, iterative**, and feeds back from post-market monitoring (Art. 72).

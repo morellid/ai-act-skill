@@ -147,10 +147,19 @@ Apply the phased application calendar (Art. 113):
 
 - **2 February 2025**: prohibitions (Chapter II) and AI literacy obligations (Art. 4)
 - **2 August 2025**: GPAI obligations (Chapter V), penalties (Chapter XII), governance (Chapter VII)
-- **2 August 2026**: most obligations including transparency (Art. 50) and high-risk for Annex III systems
-- **2 August 2027**: high-risk for systems falling under Art. 6(1) (Annex I products with third-party conformity)
+- **2 August 2026**: most obligations including transparency (Art. 50) and high-risk for Annex III systems *(pending delay, see below)*
+- **2 August 2027**: high-risk for systems falling under Art. 6(1) (Annex I products with third-party conformity) *(pending delay, see below)*
 
 Note: **GPAI models already on the market on 2 August 2025** have until **2 August 2027** to comply (Art. 111(3)).
+
+#### Pending: Digital Omnibus on AI
+
+The European Commission proposed on 19 November 2025 a delay of high-risk application. The Council (general approach, 13 March 2026) and the European Parliament (negotiating position, 26 March 2026) align on:
+
+- **2 December 2027** — stand-alone high-risk AI systems (Annex III), and Article 50 transparency
+- **2 August 2028** — high-risk AI systems embedded as safety components in Annex I products
+
+The Omnibus is in trilogue and **not yet adopted**. Until it is published in the Official Journal, the original Article 113 dates above remain the binding deadlines. Article 4 (AI literacy), Article 5 (prohibitions), and Chapter V GPAI obligations are **not** affected. Whenever the output cites 2 August 2026 (high-risk Annex III, Art. 50) or 2 August 2027 (Annex I), flag the pending move alongside the binding date.
 
 ### Step 9 — Output
 
@@ -189,12 +198,14 @@ Produce a markdown report:
 
 ## Applicable dates
 
-| Obligation block | Applies from | Status as of [today] |
-|---|---|---|
-| Prohibitions (Art. 5) + AI literacy (Art. 4) | 2 February 2025 | In force |
-| GPAI obligations (Chapter V) | 2 August 2025 | In force |
-| Most obligations (incl. high-risk Annex III, transparency Art. 50) | 2 August 2026 | [In force / Pending] |
-| High-risk under Art. 6(1) (Annex I products) | 2 August 2027 | Pending |
+| Obligation block | Applies from | Status as of [today] | Pending Omnibus delay |
+|---|---|---|---|
+| Prohibitions (Art. 5) + AI literacy (Art. 4) | 2 February 2025 | In force | — |
+| GPAI obligations (Chapter V) | 2 August 2025 | In force | — |
+| Most obligations (incl. high-risk Annex III, transparency Art. 50) | 2 August 2026 | [In force / Pending] | → 2 December 2027 (Digital Omnibus on AI, in trilogue) |
+| High-risk under Art. 6(1) (Annex I products) | 2 August 2027 | Pending | → 2 August 2028 (Digital Omnibus on AI, in trilogue) |
+
+> The Digital Omnibus on AI (Commission proposal, 19 November 2025) would shift the high-risk and Article 50 dates as shown. Trilogue ongoing as of late March 2026; **not yet adopted**. Original Art. 113 dates remain binding until publication in the OJ.
 
 ## Next-task recommendations
 

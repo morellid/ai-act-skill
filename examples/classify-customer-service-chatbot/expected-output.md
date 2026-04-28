@@ -61,16 +61,18 @@ Quick screen — none triggered:
 
 ## Applicable dates
 
-| Obligation | Applies from | Status as of 2026-04-25 |
-|---|---|---|
-| Prohibitions (Art. 5) + AI literacy (Art. 4) | 2 February 2025 | In force |
-| GPAI obligations (relevant to the upstream model provider) | 2 August 2025 | In force |
-| Article 50 transparency | **2 August 2026** | Pending |
-| High-risk Annex III obligations (not applicable here) | 2 August 2026 | N/A |
+| Obligation | Applies from | Status as of 2026-04-25 | Pending Omnibus delay |
+|---|---|---|---|
+| Prohibitions (Art. 5) + AI literacy (Art. 4) | 2 February 2025 | In force | — |
+| GPAI obligations (relevant to the upstream model provider) | 2 August 2025 | In force | — |
+| Article 50 transparency | **2 August 2026** | Pending | → 2 December 2027 (Digital Omnibus on AI, in trilogue) |
+| High-risk Annex III obligations (not applicable here) | 2 August 2026 | N/A | → 2 December 2027 if it became applicable |
+
+> The Digital Omnibus on AI (Commission proposal, 19 November 2025; Council general approach 13 March 2026; Parliament negotiating position 26 March 2026) would shift the Article 50 application to 2 December 2027. Trilogue ongoing; not yet adopted. 2 August 2026 remains the binding deadline until publication in the OJ.
 
 ## Next-task recommendations
 
-- [x] Run [`tasks/check-transparency.md`](../../tasks/check-transparency.md) for the Article 50 obligations applicable from 2 August 2026
+- [x] Run [`tasks/check-transparency.md`](../../tasks/check-transparency.md) for the Article 50 obligations applicable from 2 August 2026 (pending Omnibus shift to 2 December 2027)
 - [ ] Confirm the third-party GPAI provider supplies Annex XII documentation
 - [ ] Implement AI literacy measures (Art. 4) for ExampleRetail staff who configure or operate the system
 

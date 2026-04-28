@@ -81,10 +81,19 @@ The AI Act has phased application:
 
 - **2 February 2025** — prohibitions (Art. 5) and AI literacy (Art. 4) in force
 - **2 August 2025** — GPAI obligations (Chapter V), penalties, governance in force
-- **2 August 2026** — most obligations including high-risk Annex III and Article 50 transparency
-- **2 August 2027** — high-risk Annex I products
+- **2 August 2026** — most obligations including high-risk Annex III and Article 50 transparency *(pending delay — see Digital Omnibus below)*
+- **2 August 2027** — high-risk Annex I products *(pending delay — see Digital Omnibus below)*
 
-When updating tasks or extracts, check that the dates of application referenced are still consistent with these phases.
+### Pending: Digital Omnibus on AI
+
+On 19 November 2025 the European Commission proposed delaying the high-risk application dates. The Council reached general approach on 13 March 2026; the European Parliament adopted its negotiating position on 26 March 2026. Both align on:
+
+- **2 December 2027** — for stand-alone high-risk AI systems (Annex III)
+- **2 August 2028** — for high-risk AI systems embedded as safety components in Annex I products
+
+The proposal is **in trilogue, not yet adopted**. Until publication in the Official Journal, the original Article 113 dates remain the legally binding deadlines. The 2 February 2025 (prohibitions, AI literacy) and 2 August 2025 (GPAI, penalties, governance) dates are **not** affected by the Omnibus.
+
+When updating tasks or extracts, check that the dates of application referenced are still consistent with these phases, and that the pending Omnibus change is flagged whenever the 2 August 2026 or 2 August 2027 dates are cited.
 
 ## Disclaimer
 

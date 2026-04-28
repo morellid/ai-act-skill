@@ -5,7 +5,7 @@
 **Accessed**: 2026-04-25
 **Licence**: EU legislative text — public domain
 **Citation**: Regulation (EU) 2024/1689, Art. 50
-**Application**: from **2 August 2026** (Art. 113(c))
+**Application**: from **2 August 2026** (Art. 113(c)) *(pending: Digital Omnibus on AI proposes 2 December 2027; in trilogue, not yet adopted — see `digital-omnibus-ai-2025` in `sources.yaml`)*
 
 ---
 

@@ -15,9 +15,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - **Cross-agent reach via AGENTS.md**: added `AGENTS.md` at the repository root, the open standard now governed by the Linux Foundation Agentic AI Foundation. This unlocks native discovery on Codex, Cursor, Windsurf, GitHub Copilot, Devin, Amp, Antigravity, and other AGENTS.md-aware tools (60 000+ repos).
 - **Adapters** for agents with different native formats: `adapters/copilot-instructions.md` (GitHub Copilot), `adapters/cursor-rule.mdc` (Cursor MDC rule). See `adapters/README.md` for the vendor + adapt pattern.
 - README "Option D — use from another agent" section pointing to AGENTS.md vendor pattern and `adapters/`.
+- **Digital Omnibus on AI tracking**: timeline tables and disclaimers across `README.md`, `SKILL.md`, `AGENTS.md`, `tasks/classify-system.md`, and `tasks/check-transparency.md` now flag the Commission's 19 November 2025 proposal to delay high-risk obligations. As of late March 2026 the Council and Parliament have aligned on **2 December 2027** (Annex III stand-alone) and **2 August 2028** (Annex I embedded) — pending adoption. New `digital-omnibus-ai-2025` source in `references/sources.yaml` to be promoted to a citable extract once the regulation is adopted in the Official Journal.
 
 ### To do
 - Tag and publish v0.1.0 release on GitHub
+- Lock final Omnibus dates and update timeline tables once the Regulation is adopted in the OJ; promote `digital-omnibus-ai-2025` to a primary source with a textual extract
 - Add a `check-importer-distributor` task (Articles 23–24)
 - Track and integrate the first published CEN-CENELEC harmonised standards (expected 2026)
 - Add a third example covering a GPAI provider classification
