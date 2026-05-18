@@ -154,12 +154,14 @@ Note: **GPAI models already on the market on 2 August 2025** have until **2 Augu
 
 #### Pending: Digital Omnibus on AI
 
-The European Commission proposed on 19 November 2025 a delay of high-risk application. The Council (general approach, 13 March 2026) and the European Parliament (negotiating position, 26 March 2026) align on:
+The European Commission proposed on 19 November 2025 to amend the AI Act. Following the Council general approach (13 March 2026) and the European Parliament negotiating position (26 March 2026), a **provisional political agreement was reached on 7 May 2026** in trilogue. The agreement confirms:
 
 - **2 December 2027** — stand-alone high-risk AI systems (Annex III), and Article 50 transparency
 - **2 August 2028** — high-risk AI systems embedded as safety components in Annex I products
+- a **new Article 5 prohibition** on AI systems generating non-consensual intimate imagery ("nudifier apps") and CSAM, with **2 December 2026** compliance once in force
+- a narrowed "safety component" definition (excludes assistive and performance-optimising AI from Annex I high-risk classification)
 
-The Omnibus is in trilogue and **not yet adopted**. Until it is published in the Official Journal, the original Article 113 dates above remain the binding deadlines. Article 4 (AI literacy), Article 5 (prohibitions), and Chapter V GPAI obligations are **not** affected. Whenever the output cites 2 August 2026 (high-risk Annex III, Art. 50) or 2 August 2027 (Annex I), flag the pending move alongside the binding date.
+The agreement is **pending formal adoption and publication in the Official Journal** (co-legislator target: before 2 August 2026). Until OJ publication, the original Article 113 dates above remain the binding deadlines, and the new Article 5 prohibition is not yet in force. Article 4 (AI literacy), the existing Article 5 prohibitions, and Chapter V GPAI obligations are **not** affected. Whenever the output cites 2 August 2026 (high-risk Annex III, Art. 50) or 2 August 2027 (Annex I), flag the pending move alongside the binding date. When the system in scope could fall under the future nudifier/CSAM prohibition, flag that too.
 
 ### Step 9 — Output
 
@@ -205,7 +207,7 @@ Produce a markdown report:
 | Most obligations (incl. high-risk Annex III, transparency Art. 50) | 2 August 2026 | [In force / Pending] | → 2 December 2027 (Digital Omnibus on AI, in trilogue) |
 | High-risk under Art. 6(1) (Annex I products) | 2 August 2027 | Pending | → 2 August 2028 (Digital Omnibus on AI, in trilogue) |
 
-> The Digital Omnibus on AI (Commission proposal, 19 November 2025) would shift the high-risk and Article 50 dates as shown. Trilogue ongoing as of late March 2026; **not yet adopted**. Original Art. 113 dates remain binding until publication in the OJ.
+> The Digital Omnibus on AI (Commission proposal, 19 November 2025; provisional political agreement 7 May 2026) would shift the high-risk and Article 50 dates as shown and would add a new Article 5 prohibition on non-consensual intimate imagery / CSAM (compliance 2 December 2026). **Formal adoption pending.** Original Art. 113 dates remain binding and the new prohibition is not yet in force until publication in the OJ.
 
 ## Next-task recommendations
 

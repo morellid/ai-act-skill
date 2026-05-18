@@ -171,35 +171,62 @@ sources:
       extract under `references/extracts/`.
 
   - id: digital-omnibus-ai-2025
-    title: "Digital Omnibus on AI — Commission proposal to amend Regulation (EU) 2024/1689 (19 November 2025)"
+    title: "Digital Omnibus on AI — amendment to Regulation (EU) 2024/1689 (Commission proposal 19 November 2025; provisional political agreement 7 May 2026)"
     type: legislative-proposal
     url: https://www.europarl.europa.eu/legislative-train/package-digital-package/file-digital-omnibus-on-ai
     alt_url: https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-ai
-    accessed: 2026-04-28
+    accessed: 2026-05-18
     sha256: null
     license: public-domain-eu-doc
     binary_path: null
     excerpt_paths: []
     notes: |
-      Commission proposal of 19 November 2025 to delay the application
-      of high-risk AI obligations under Regulation (EU) 2024/1689.
-      Status as of 2026-04-28: in trilogue, NOT yet adopted.
-      Council general approach: 13 March 2026.
-      European Parliament negotiating position: 26 March 2026.
-      Both align on fixed deadlines:
-        - 2 December 2027 — stand-alone high-risk AI systems (Annex III)
-                            and Article 50 transparency
-        - 2 August 2028  — high-risk AI systems embedded as safety
-                            components in Annex I products
-      Article 4 (AI literacy) and Article 5 (prohibitions) — in force
-      since 2 February 2025 — and Chapter V GPAI obligations — in
-      force since 2 August 2025 — are NOT affected.
-      Until the amendment is published in the Official Journal, the
-      original Art. 113 dates of Regulation (EU) 2024/1689 remain
-      legally binding. Promote to a primary citable source with a
-      textual extract once adopted.
+      Commission proposal of 19 November 2025 to amend Regulation (EU)
+      2024/1689 (the AI Act).
+      Status as of 2026-05-18: PROVISIONAL POLITICAL AGREEMENT REACHED
+      on 7 May 2026 between Parliament and Council. Formal adoption by
+      both co-legislators and publication in the Official Journal are
+      pending (co-legislator target: before 2 August 2026).
+      Legislative trail:
+        - Commission proposal: 19 November 2025
+        - Council general approach: 13 March 2026
+        - European Parliament negotiating position: 26 March 2026
+        - Provisional political agreement: 7 May 2026
+      Substantive content of the agreement:
+        - High-risk application dates shifted:
+            * 2 December 2027 — stand-alone high-risk AI systems
+                                (Annex III) and Article 50 transparency
+            * 2 August 2028  — high-risk AI systems embedded as safety
+                                components in Annex I products
+        - NEW Article 5 prohibition: AI systems that generate or
+          manipulate sexual / intimate images, video or audio
+          resembling an identifiable real person without that person's
+          consent ("nudifier apps"), and AI systems generating child
+          sexual abuse material. Compliance deadline: 2 December 2026
+          (once in force). Exception: AI systems with effective safety
+          measures preventing users from creating such content.
+        - Narrowed "safety component" definition (excludes assistive
+          or performance-optimising AI from Annex I high-risk).
+        - SME exemptions extended to small mid-cap enterprises (SMCs).
+        - Overlapping requirements for AI in machinery products
+          eliminated (sectoral rules apply instead).
+        - Personal-data processing permitted to detect and correct
+          biases in high-risk and non-high-risk systems.
+        - GPAI enforcement streamlined through the EU AI Office.
+      Article 4 (AI literacy) and the existing Article 5 prohibitions
+      — in force since 2 February 2025 — and Chapter V GPAI obligations
+      — in force since 2 August 2025 — are NOT affected.
+      Until publication in the Official Journal, the original Art. 113
+      dates of Regulation (EU) 2024/1689 remain legally binding and the
+      new Article 5 prohibition is not yet in force. Promote to a
+      primary citable source with a textual extract once published in
+      the OJ.
       Tracked by:
-        - Parliament IPR press release 26 March 2026:
+        - Commission press release IP/26/1024 (7 May 2026):
+          https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1024
+        - European Parliament IPR press release on the 7 May 2026 deal:
+          https://www.europarl.europa.eu/news/en/press-room/20260427IPR42011/ai-act-deal-on-simplification-measures-ban-on-nudifier-apps
+        - Earlier Parliament IPR press release (26 March 2026 mandate):
           https://www.europarl.europa.eu/news/en/press-room/20260323IPR38829/artificial-intelligence-act-delayed-application-ban-on-nudifier-apps
         - IAPP analysis:
           https://iapp.org/news/a/eu-digital-omnibus-analysis-of-key-changes

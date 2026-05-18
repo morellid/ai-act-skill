@@ -61,3 +61,9 @@ Non-compliance with the prohibitions in Article 5 is subject to the **highest ti
 - Article 5(1)(h) prohibits the practice; Member States must positively enact the optional exceptions for law enforcement in national law before any use is lawful.
 - Emotion-recognition prohibition (5(1)(f)) is **limited to workplace and educational institutions** — emotion recognition in other contexts is **not** prohibited but may trigger Article 50 transparency obligations and may be high-risk under Annex III area 1 (biometrics).
 - Biometric categorisation prohibition (5(1)(g)) targets the **inference of sensitive attributes**. Lawful labelling/filtering of biometric datasets in law enforcement is exempt; broader biometric categorisation is potentially **high-risk under Annex III area 1**.
+
+---
+
+## Pending addition — Digital Omnibus on AI (provisional political agreement, 7 May 2026)
+
+> **Not yet in force.** The provisional political agreement reached between Parliament and Council on 7 May 2026 adds a new prohibition to Article 5: AI systems that **generate or manipulate sexual / intimate images, video or audio resembling an identifiable real person without that person's consent** ("nudifier apps"), and AI systems that **generate child sexual abuse material**. **Exception**: AI systems with effective safety measures preventing users from creating such content. **Compliance deadline once in force**: 2 December 2026. The new sub-letter and final wording will be confirmed at OJ publication. Track via `sources.yaml` id `digital-omnibus-ai-2025`; promote a textual extract here once published in the Official Journal.
