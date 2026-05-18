@@ -64,6 +64,10 @@ Authoritative references in [`references/sources.yaml`](references/sources.yaml)
 - **Commission Guidelines on the scope of obligations for providers of GPAI models** (July 2025)
 - **CEN-CENELEC JTC 21** — harmonised standards under preparation (track the published list at <https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation>)
 
+Pending (track, treat as indicative until finalised):
+
+- **Commission draft Article 50 transparency guidelines** (8 May 2026, public consultation until 3 June 2026) — `sources.yaml` id `ec-art50-transparency-guidelines-draft-2026`. Will become the authoritative Commission interpretation of Article 50 once final; promote to a primary source with a textual extract at that point.
+
 Textual extracts of the cited articles in [`references/extracts/`](references/extracts/).
 
 ## Limits
