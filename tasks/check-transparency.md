@@ -24,6 +24,9 @@ Determine which Article 50 obligations apply, identify the addressee (provider o
 Read first:
 - [`references/extracts/ai-act-art-50-transparency.md`](../references/extracts/ai-act-art-50-transparency.md)
 
+Track in parallel (not yet finalised; treat as indicative, not as binding interpretation, until the final version is published):
+- **Commission draft Article 50 transparency guidelines** (8 May 2026, in public consultation until 3 June 2026) — covers all four blocks of Article 50. See `sources.yaml` id `ec-art50-transparency-guidelines-draft-2026`. Once finalised, these guidelines will be the authoritative Commission interpretation of Article 50 and a textual extract should be added under `references/extracts/`. The final version is expected before the Article 50 application date.
+
 ## Procedure
 
 For each of Article 50's four blocks, determine: trigger? addressee (provider or deployer)? what disclosure is required? exceptions?
