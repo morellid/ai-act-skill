@@ -2,6 +2,8 @@
 
 Verify whether a system triggers any of the eight prohibited AI practices under Article 5 of Regulation (EU) 2024/1689. Prohibited practices have been **applicable since 2 February 2025**.
 
+> **Pending — Digital Omnibus on AI.** The provisional political agreement reached on **7 May 2026** between Parliament and Council adds a **ninth prohibition** to Article 5: AI systems that generate or manipulate sexual / intimate images, video or audio resembling an identifiable real person without that person's consent ("nudifier apps") and AI systems generating child sexual abuse material. Compliance deadline once in force: **2 December 2026**. Formal adoption and OJ publication are pending. Until OJ publication, this prohibition is **not yet legally binding**, but systems likely to fall in scope should already be flagged for the future deadline. The exception is for systems with effective safety measures preventing users from creating such content.
+
 ## Goal
 
 For each of the eight prohibitions, determine: **does the system fall within the prohibition?** If yes, the system cannot be lawfully placed on the market or put into service in the EU; the project must be stopped or fundamentally redesigned.
@@ -91,6 +93,21 @@ Note: emotion inference outside these areas is allowed but subject to Article 50
 
 Real-time means: capture, comparison, and identification all without significant delay (Art. 3(42)). Post-event remote biometric identification has separate rules (high-risk under Annex III).
 
+### Prohibition 9 (PENDING — not yet in force) — Non-consensual intimate imagery and CSAM
+
+**Status**: agreed in trilogue on 7 May 2026 (Digital Omnibus on AI). Formal adoption and OJ publication pending. Compliance deadline once in force: **2 December 2026**. The provision has no Article 5 sub-letter yet; this section is informative and forward-looking.
+
+**Trigger (as agreed)**: AI systems that **generate or manipulate sexual or intimate images, video or audio resembling an identifiable real person without that person's consent** ("nudifier apps"), and AI systems that **generate child sexual abuse material (CSAM)**.
+
+**Exception (as agreed)**: AI systems that have **effective safety measures preventing users from creating such content** are not in scope.
+
+Questions:
+- Does the system have a generative image / video / audio capability that can produce sexual or intimate content depicting identifiable persons?
+- Are there effective technical safeguards (input filters, prompt classifiers, output classifiers, identity-recognition refusals, watermarking + provenance, age-gates, abuse-detection) that prevent generation of non-consensual intimate content and CSAM? Can you evidence their effectiveness?
+- For dual-use generative models distributed open-weight: are downstream safeguards documented and enforceable, or are they trivially bypassable?
+
+Action while pending: flag the system, document the safeguards now, plan a 2 December 2026 deadline once the agreement is published in the OJ. Do not rely on the pending status to skip Article 5 analysis of the existing eight prohibitions, several of which (notably 5(1)(a) deception and 5(1)(b) exploitation of vulnerabilities) may already be triggered by non-consensual deepfake products.
+
 ## Output
 
 ```markdown
@@ -114,6 +131,9 @@ Real-time means: capture, comparison, and identification all without significant
 | 6 | Emotion recognition at workplace/education (Art. 5(1)(f)) | ... | ... |
 | 7 | Biometric categorisation inferring sensitive attributes (Art. 5(1)(g)) | ... | ... |
 | 8 | Real-time remote biometric ID in public spaces / law enforcement (Art. 5(1)(h)) | ... | ... |
+| 9* | Non-consensual intimate imagery / CSAM (Digital Omnibus on AI, agreed 7 May 2026, **not yet in force**) | [No / Possibly / Yes — flag for 2 Dec 2026] | [...] |
+
+\* Prohibition 9 reflects the provisional political agreement on the Digital Omnibus on AI. It is **not yet legally binding** pending formal adoption and publication in the Official Journal; report it as a forward-looking flag, not as a current Article 5 obligation.
 
 ## Conclusion
 

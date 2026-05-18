@@ -2,7 +2,7 @@
 
 Verify whether an AI system or its outputs trigger transparency obligations under Article 50 of Regulation (EU) 2024/1689, applicable from **2 August 2026**.
 
-> **Pending — Digital Omnibus on AI.** The Commission's 19 November 2025 proposal, on which Council (13 March 2026) and Parliament (26 March 2026) align, would shift the Article 50 application date together with high-risk Annex III obligations to **2 December 2027**. The proposal is in trilogue and not yet adopted; until publication in the OJ, 2 August 2026 remains the binding deadline.
+> **Pending — Digital Omnibus on AI.** A **provisional political agreement was reached on 7 May 2026** between Parliament and Council, confirming the shift of the Article 50 application date together with high-risk Annex III obligations to **2 December 2027**. Formal adoption and publication in the Official Journal are pending (co-legislator target: before 2 August 2026); until OJ publication, 2 August 2026 remains the binding deadline.
 
 Article 50 applies to certain AI systems regardless of risk classification, in addition to any other obligations. A system that is "minimal risk" can still be subject to Article 50 transparency.
 

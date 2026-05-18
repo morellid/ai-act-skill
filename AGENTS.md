@@ -86,14 +86,19 @@ The AI Act has phased application:
 
 ### Pending: Digital Omnibus on AI
 
-On 19 November 2025 the European Commission proposed delaying the high-risk application dates. The Council reached general approach on 13 March 2026; the European Parliament adopted its negotiating position on 26 March 2026. Both align on:
+On 19 November 2025 the European Commission proposed delaying the high-risk application dates. The Council reached general approach on 13 March 2026; the European Parliament adopted its negotiating position on 26 March 2026. A **provisional political agreement was reached on 7 May 2026** between the two co-legislators in trilogue. The agreement:
 
-- **2 December 2027** — for stand-alone high-risk AI systems (Annex III)
-- **2 August 2028** — for high-risk AI systems embedded as safety components in Annex I products
+- shifts **stand-alone high-risk AI systems (Annex III) and Article 50 transparency** to **2 December 2027**
+- shifts **high-risk AI systems embedded as safety components in Annex I products** to **2 August 2028**
+- adds a **new Article 5 prohibition** on AI systems generating non-consensual intimate imagery ("nudifier apps") and CSAM, with a **2 December 2026** compliance deadline once in force (with an exception for systems that have effective safety measures preventing such content)
+- narrows the "safety component" definition (excludes assistive and performance-optimising AI from Annex I high-risk classification)
+- extends SME exemptions to small mid-cap enterprises (SMCs)
+- permits personal-data processing to detect and correct bias in high-risk and non-high-risk systems
+- streamlines GPAI enforcement through the EU AI Office
 
-The proposal is **in trilogue, not yet adopted**. Until publication in the Official Journal, the original Article 113 dates remain the legally binding deadlines. The 2 February 2025 (prohibitions, AI literacy) and 2 August 2025 (GPAI, penalties, governance) dates are **not** affected by the Omnibus.
+The agreement is **pending formal adoption and publication in the Official Journal** (co-legislator target: before 2 August 2026). Until OJ publication, the original Article 113 dates remain the legally binding deadlines, and the new Article 5 prohibition is not yet in force. The 2 February 2025 (prohibitions, AI literacy) and 2 August 2025 (GPAI, penalties, governance) dates are **not** affected by the Omnibus.
 
-When updating tasks or extracts, check that the dates of application referenced are still consistent with these phases, and that the pending Omnibus change is flagged whenever the 2 August 2026 or 2 August 2027 dates are cited.
+When updating tasks or extracts, check that the dates of application referenced are still consistent with these phases, that the pending Omnibus change is flagged whenever the 2 August 2026 or 2 August 2027 dates are cited, and that systems potentially in scope of the future nudifier/CSAM prohibition are flagged.
 
 ## Disclaimer
 
