@@ -1,0 +1,71 @@
+name: release
+
+# Builds a single drag-and-drop .zip for the skill and attaches it to a
+# GitHub Release. Ready for upload at https://claude.ai/customize/skills.
+#
+# Triggers:
+#   - push: tag starting with "v" (e.g. v0.1.0, v0.2.0) -> automatic release
+#   - workflow_dispatch: manual trigger, requires the tag as input
+#   - release: published -> rebuilds and re-uploads the zip on the release
+#     just created (useful when the release is created from the GitHub UI)
+#
+# Idempotent: if the release already exists, the asset is re-uploaded with
+# --clobber.
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag to release (must already exist, e.g. v0.1.0)"
+        required: true
+        type: string
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    name: Build zip and upload to GitHub Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Resolve tag
+        id: resolve
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            TAG="${GITHUB_REF#refs/tags/}"
+          elif [ "${{ github.event_name }}" = "release" ]; then
+            TAG="${{ github.event.release.tag_name }}"
+          else
+            TAG="${{ inputs.tag }}"
+          fi
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "Releasing tag: $TAG"
+
+      - name: Checkout tag
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.resolve.outputs.tag }}
+
+      - name: Build skill zip
+        run: ./scripts/build_releases.sh
+
+      - name: Create or update release and upload zip
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ steps.resolve.outputs.tag }}
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release $TAG exists: upload with --clobber"
+            gh release upload "$TAG" dist/*.zip --clobber
+          else
+            echo "Release $TAG does not exist: creating it"
+            gh release create "$TAG" \
+              --title "$TAG" \
+              --notes "AI Act compliance skill. Download the .zip and upload it to https://claude.ai/customize/skills (drag-and-drop)." \
+              dist/*.zip
+          fi
