@@ -104,6 +104,26 @@ unzip -d ~/.claude/skills /tmp/ai-act-skill.zip
 mv ~/.claude/skills/ai-act-skill-* ~/.claude/skills/ai-act-compliance
 ```
 
+### Option F — install via `npx skills` (vercel-labs CLI)
+
+The [`vercel-labs/skills`](https://github.com/vercel-labs/skills) CLI auto-detects the `SKILL.md` at the repo root and installs it into your agent's skills directory.
+
+```bash
+npx skills add morellid/ai-act-skill
+```
+
+By default the CLI installs into `~/.claude/skills/`. Use `--list` to preview, or pass an explicit target with the CLI's flags (see `npx skills add --help`).
+
+### Option G — drag-and-drop on Claude.ai (web)
+
+If you use Claude only via the web (claude.ai, no Claude Code), grab the prebuilt skill zip from the [GitHub Releases](https://github.com/morellid/ai-act-skill/releases) and upload it.
+
+1. Open the latest release: <https://github.com/morellid/ai-act-skill/releases/latest>
+2. Download `ai-act-compliance.zip`.
+3. Go to <https://claude.ai/customize/skills> and upload (or drag-and-drop) the file.
+
+The zip contains the skill in a single top-level directory (`ai-act-compliance/` with `SKILL.md`, `tasks/`, `references/`, `examples/`, `LICENSE`). Do not extract it before upload.
+
 After installation, restart your agent (Claude Code or Codex) so the new skill is discovered.
 
 ### Uninstall
@@ -175,7 +195,8 @@ ai-act-skill/
 │   └── classify-hr-emotion-recognition/
 └── scripts/
     ├── validate.sh              ← skill self-check
-    └── fetch-references.sh      ← downloads source PDFs and verifies hashes
+    ├── fetch-references.sh      ← downloads source PDFs and verifies hashes
+    └── build_releases.sh        ← builds dist/ai-act-compliance.zip for claude.ai drag-and-drop
 ```
 
 ## Versioning

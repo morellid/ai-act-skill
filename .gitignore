@@ -17,3 +17,7 @@ Thumbs.db
 output/
 tmp/
 *.log
+
+# Release build artifacts (zips for drag-and-drop install on claude.ai).
+# Built by ./scripts/build_releases.sh and by .github/workflows/release.yml.
+dist/
