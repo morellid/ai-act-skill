@@ -43,6 +43,16 @@ Read first, in order:
 5. [`references/extracts/ai-act-art-50-transparency.md`](../references/extracts/ai-act-art-50-transparency.md) — transparency-only systems
 6. [`references/extracts/ai-act-art-51-55-gpai.md`](../references/extracts/ai-act-art-51-55-gpai.md) — GPAI obligations and systemic-risk threshold
 
+### Pending: Commission draft guidelines on high-risk classification (19 May 2026)
+
+The European Commission published draft **Guidelines on the Classification of High-Risk AI Systems** on 19 May 2026, under Article 96 AI Act. They are in **targeted public consultation until 23 June 2026** and set out the Commission's official interpretation of the concepts used in this task:
+
+- when an AI system embedded in an **Annex I** product qualifies as a **safety component** under Article 6(1)
+- how to assess whether a system falls into one of the eight **Annex III** use-case areas under Article 6(2), with practical examples of systems that ARE and ARE NOT high-risk
+- when the **Article 6(3) derogation** (no significant risk to health, safety or fundamental rights) applies
+
+Tracked as `ec-high-risk-classification-guidelines-draft-2026` in [`references/sources.yaml`](../references/sources.yaml). Final version expected Q3 2026. Until the final version is published, treat the draft as indicative; once finalised it becomes the authoritative Commission interpretation of Articles 6 and Annex III for this classification task and the source `excerpt_paths` will be populated accordingly.
+
 ## Procedure
 
 ### Step 1 — In-scope check (Art. 2 + Art. 3(1))
