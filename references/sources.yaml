@@ -170,6 +170,46 @@ sources:
       finalised, promote to a citable source and create a textual
       extract under `references/extracts/`.
 
+  - id: ec-high-risk-classification-guidelines-draft-2026
+    title: "Draft Commission Guidelines on the Classification of High-Risk AI Systems — European Commission (19 May 2026)"
+    type: commission-guidelines-draft
+    url: https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems
+    alt_url: https://digital-strategy.ec.europa.eu/en/consultations/targeted-consultation-draft-guidelines-classification-high-risk-artificial-intelligence-systems
+    accessed: 2026-05-31
+    sha256: null
+    license: public-domain-eu-doc
+    binary_path: null
+    excerpt_paths: []
+    status: draft-in-consultation
+    consultation_deadline: 2026-06-23
+    notes: |
+      Commission (DG CNECT / EU AI Office) draft guidelines required
+      by Article 96 AI Act (deadline: no later than 2 February 2026),
+      setting out the Commission's official interpretation of the
+      concepts used to classify AI systems as high-risk under Article 6
+      and Annex III.
+      Status as of 2026-05-31: DRAFT, in targeted public consultation.
+      Deadline for submissions: 23 June 2026 (22:00 CET). Final
+      guidelines expected Q3 2026.
+      Scope:
+        - Art. 6(1) — when an AI system embedded in an Annex I product
+          qualifies as a "safety component" requiring third-party
+          conformity assessment
+        - Art. 6(2) + Annex III — interpretation of each of the eight
+          Annex III use-case areas, with practical examples of systems
+          that ARE and ARE NOT high-risk
+        - Art. 6(3) derogation — when an Annex III system is not
+          high-risk because it does not pose a significant risk of
+          harm to health, safety, or fundamental rights
+      Commission news announcement (19 May 2026):
+        https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-guidelines-classification-high-risk-artificial-intelligence-systems
+      Cite as: draft Commission guidelines, not yet finalised. Once
+      finalised, promote to a citable source and create a textual
+      extract under `references/extracts/` (planned id:
+      `references/extracts/ec-high-risk-classification-guidelines.md`),
+      and cross-reference from
+      `references/extracts/ai-act-art-6-9-high-risk-classification.md`.
+
   - id: digital-omnibus-ai-2025
     title: "Digital Omnibus on AI — amendment to Regulation (EU) 2024/1689 (Commission proposal 19 November 2025; provisional political agreement 7 May 2026)"
     type: legislative-proposal
