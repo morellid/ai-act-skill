@@ -61,18 +61,19 @@ Quick screen — none triggered:
 
 ## Applicable dates
 
-| Obligation | Applies from | Status as of 2026-04-25 | Pending Omnibus delay |
-|---|---|---|---|
-| Prohibitions (Art. 5) + AI literacy (Art. 4) | 2 February 2025 | In force | — |
-| GPAI obligations (relevant to the upstream model provider) | 2 August 2025 | In force | — |
-| Article 50 transparency | **2 August 2026** | Pending | → 2 December 2027 (Digital Omnibus on AI, in trilogue) |
-| High-risk Annex III obligations (not applicable here) | 2 August 2026 | N/A | → 2 December 2027 if it became applicable |
+| Obligation block | Applies from | Status |
+|---|---|---|
+| Prohibitions (Art. 5(1)(a)-(h)), AI literacy (Art. 4) | 2 February 2025 | In force |
+| GPAI obligations (relevant to the upstream model provider) | 2 August 2025 | In force |
+| **Article 50 transparency** | **2 August 2026** | **In force** |
+| Art. 50(2) marking and detection, if ShopAssist was placed on the market before 2 Aug 2026 | 2 December 2026 | Transitional period running |
+| High-risk Annex III obligations (not applicable here) | 2 December 2027 | N/A |
 
-> The Digital Omnibus on AI (Commission proposal, 19 November 2025; Council general approach 13 March 2026; Parliament negotiating position 26 March 2026) would shift the Article 50 application to 2 December 2027. Trilogue ongoing; not yet adopted. 2 August 2026 remains the binding deadline until publication in the OJ.
+> Dates per Art. 113 as amended by Reg. (EU) 2026/1744. Article 50 was **not** deferred by the Digital Omnibus on AI.
 
 ## Next-task recommendations
 
-- [x] Run [`tasks/check-transparency.md`](../../tasks/check-transparency.md) for the Article 50 obligations applicable from 2 August 2026 (pending Omnibus shift to 2 December 2027)
+- [x] Run [`tasks/check-transparency.md`](../../tasks/check-transparency.md) for the Article 50 obligations — **in force since 2 August 2026**, so this is a live compliance gap, not a future one
 - [ ] Confirm the third-party GPAI provider supplies Annex XII documentation
 - [ ] Implement AI literacy measures (Art. 4) for ExampleRetail staff who configure or operate the system
 

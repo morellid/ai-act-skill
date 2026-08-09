@@ -6,7 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+### Fixed (post v0.1.0-alpha)
+- **CRITICAL — Article 50 was never delayed.** The skill previously stated across `SKILL.md`, `README.md`, `AGENTS.md`, `tasks/check-transparency.md`, `tasks/classify-system.md`, `references/extracts/ai-act-art-50-transparency.md` and both `examples/*/expected-output.md` that the Digital Omnibus on AI shifted Article 50 transparency to 2 December 2027 together with high-risk Annex III. It did not: Regulation (EU) 2026/1744 deferred only the Chapter III high-risk dates. **Article 50 has applied since 2 August 2026.** The only relief is a transitional period to 2 December 2026 for the Art. 50(2) marking and detection duty on generative systems placed on the market before 2 August 2026; Art. 50(1) disclosure had no transitional period. Confirmed by Commission Guidelines C(2026) 5054 final, points 2 and 153. Resolves #9.
+
+### Changed (post v0.1.0-alpha)
+- **Digital Omnibus on AI is in force — Regulation (EU) 2026/1744**: Parliament adopted 16 June 2026, Council approved 29 June 2026, signed 8 July 2026, published in the OJ 24 July 2026, in force 27 July 2026. All "pending / provisional agreement / trilogue" language replaced with enacted-law language across `README.md`, `SKILL.md`, `AGENTS.md`, `tasks/classify-system.md`, `tasks/check-transparency.md`, `tasks/check-prohibited-practices.md`, `references/extracts/ai-act-art-5-prohibited.md` and `references/extracts/ai-act-art-6-9-high-risk-classification.md`. Source `digital-omnibus-ai-2025` renamed to `digital-omnibus-ai-2026`, retyped `regulation-eu`, with the ELI URL and a documented verification status (the OJ text was retrieved; the HTML rendition truncated before the amended Art. 113, so that wording remains to be confirmed verbatim). Resolves #8.
+- **Date tables collapsed to a single binding column** in `tasks/classify-system.md` and both examples: the "Applies from / Pending Omnibus delay" two-column layout is gone, replaced by now-binding dates with an Art. 113 footnote.
+- **New Art. 5 NCII/CSAM prohibitions reframed** from "agreed, not yet in force" to "enacted, applicable 2 December 2026", and now cited by point: **Art. 5(1)(ba)** (non-consensual intimate imagery) and **Art. 5(1)(bb)** (CSAM), quoted verbatim from the OJ text in `references/extracts/ai-act-art-5-prohibited.md`. The new **Art. 5(1a)** scope rule is spelled out in `tasks/check-prohibited-practices.md`: safeguards are irrelevant where such generation is the system's **intended purpose**, and only defeat the prohibition on the "reasonably foreseeable and reproducible outcome" limb. An earlier draft of this change wrongly implied a blanket safeguards exception.
+- **High-risk classification draft guidelines**: consultation was extended from 23 June to **23 July 2026** and has now closed; status `draft-consultation-closed`, final expected Q3 2026 ahead of the 2 December 2027 Annex III date.
+
 ### Added (post v0.1.0-alpha)
+- **Article 50 transparency guidelines — adopted and extracted**: the Commission adopted the final *Guidelines on the implementation of the transparency obligations for certain AI systems under Article 50* on **20 July 2026** (C(2026) 5054 final, 51 pages, 155 points, Art. 96(1)(d) basis, non-binding). Source `ec-art50-transparency-guidelines-draft-2026` promoted to `ec-art50-transparency-guidelines` (`status: final`), with a full textual extract at `references/extracts/ec-art50-transparency-guidelines.md` covering every Article 50 block: scope tests, the provider/deployer boundary, the restrictive reading of the 'obvious' exception, the marking **and** detection pair under 50(2), the four deep-fake criteria, the attenuated artistic regime, the editorial exception, and the Art. 50(5) delivery standard. `tasks/check-transparency.md` rewritten against it. Resolves #2 and #10.
+- **Code of Practice on Transparency of AI-generated Content** (final 10 June 2026): new source `code-of-practice-transparency-ai-content-2026`. Per Guidelines point 146 it is the only Union-wide recognised practical framework for demonstrating Art. 50(2), (4) and (5) compliance; adherence is voluntary and non-signatories may evidence equivalence by other means, a documented gap analysis being one practical route.
+- **EU Action Plan on Cybersecurity and Artificial Intelligence** (7 July 2026): new secondary source `eu-action-plan-cybersecurity-ai-2026`, relevant as context for Article 15 and for the robustness requirement on Art. 50(2) marking solutions. Creates no obligations.
+
 - **Codex compatibility**: skill now works on OpenAI Codex (`~/.agents/skills/ai-act-compliance/`) in addition to Claude Code (`~/.claude/skills/ai-act-compliance/`). Same `SKILL.md` + frontmatter format used by both agents.
 - `agents/openai.yaml` with Codex UI metadata (display_name, short_description, default_prompt).
 - `license: MIT` added to SKILL.md frontmatter (Codex picks this up; harmless on Claude Code).
@@ -24,7 +37,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### To do
 - Tag and publish v0.1.0 release on GitHub
-- Lock final Omnibus dates and update timeline tables once the Regulation is adopted in the OJ; promote `digital-omnibus-ai-2025` to a primary source with a textual extract
+- Confirm the amended Article 113 wording verbatim against the consolidated OJ text of Regulation (EU) 2026/1744 (the HTML rendition retrieved on 2026-08-09 truncated mid-Article 63) and add an extract under `references/extracts/`
+- Promote the high-risk classification guidelines to a primary source with a textual extract once the final version is published (expected Q3 2026)
 - Add a `check-importer-distributor` task (Articles 23–24)
 - Track and integrate the first published CEN-CENELEC harmonised standards (expected 2026)
 - Add a third example covering a GPAI provider classification

@@ -2,7 +2,7 @@
 
 Verify whether a system triggers any of the eight prohibited AI practices under Article 5 of Regulation (EU) 2024/1689. Prohibited practices have been **applicable since 2 February 2025**.
 
-> **Pending — Digital Omnibus on AI.** The provisional political agreement reached on **7 May 2026** between Parliament and Council adds a **ninth prohibition** to Article 5: AI systems that generate or manipulate sexual / intimate images, video or audio resembling an identifiable real person without that person's consent ("nudifier apps") and AI systems generating child sexual abuse material. Compliance deadline once in force: **2 December 2026**. Formal adoption and OJ publication are pending. Until OJ publication, this prohibition is **not yet legally binding**, but systems likely to fall in scope should already be flagged for the future deadline. The exception is for systems with effective safety measures preventing users from creating such content.
+> **Enacted, applicable 2 December 2026 — Regulation (EU) 2026/1744.** The Digital Omnibus on AI, in force since 27 July 2026, adds **two prohibitions** to Article 5(1): point **(ba)** on non-consensual intimate imagery of identifiable persons ("nudifier apps") and point **(bb)** on child sexual abuse material. A new Article 5(1a) sets out when each limb bites — for placing on the market, safeguards matter **only** where the prohibited output is a reasonably foreseeable outcome, **not** where it is the system's intended purpose. See the block on prohibitions 9 and 10 below. Applicable from **2 December 2026**: enacted law with a deferred application date, so the deadline is fixed, not conditional.
 
 ## Goal
 
@@ -93,20 +93,33 @@ Note: emotion inference outside these areas is allowed but subject to Article 50
 
 Real-time means: capture, comparison, and identification all without significant delay (Art. 3(42)). Post-event remote biometric identification has separate rules (high-risk under Annex III).
 
-### Prohibition 9 (PENDING — not yet in force) — Non-consensual intimate imagery and CSAM
+### Prohibitions 9 and 10 (enacted — applicable from 2 December 2026) — Art. 5(1)(ba) NCII and Art. 5(1)(bb) CSAM
 
-**Status**: agreed in trilogue on 7 May 2026 (Digital Omnibus on AI). Formal adoption and OJ publication pending. Compliance deadline once in force: **2 December 2026**. The provision has no Article 5 sub-letter yet; this section is informative and forward-looking.
+**Status**: inserted into Article 5(1) as points **(ba)** and **(bb)** by **Regulation (EU) 2026/1744** (Digital Omnibus on AI), in force since 27 July 2026. **Applicable from 2 December 2026.**
 
-**Trigger (as agreed)**: AI systems that **generate or manipulate sexual or intimate images, video or audio resembling an identifiable real person without that person's consent** ("nudifier apps"), and AI systems that **generate child sexual abuse material (CSAM)**.
+**Art. 5(1)(ba) — non-consensual intimate imagery**: placing on the market, putting into service or use of an AI system that generates or manipulates **realistic images, videos, audio or similar material of an identifiable natural person's intimate parts, or of an identifiable natural person engaged in sexually explicit activities**, without that person's **freely-given, specific, informed, unambiguous and explicit consent** for that generation or manipulation.
 
-**Exception (as agreed)**: AI systems that have **effective safety measures preventing users from creating such content** are not in scope.
+**Art. 5(1)(bb) — CSAM**: placing on the market, putting into service or use of an AI system that generates or manipulates material or performance within the meaning of **Article 2, points (c) and (e), of Directive 2011/93/EU**, subject to any 'without right' defence available under national law.
+
+**Art. 5(1a) — the scope rule. Read this carefully; safeguards are NOT a blanket cure.**
+
+| Conduct | Prohibited when |
+|---|---|
+| Placing on the market / putting into service | generating or manipulating such material is the **intended purpose** of the system — **safeguards are irrelevant, the prohibition bites regardless**; **or** it is a **reasonably foreseeable and reproducible outcome** and the system lacks reasonable and adequate technical safety measures and other safeguards to prevent it |
+| Use (deployer) | the deployer uses the system **for the purpose of** generating or manipulating such material |
+
+So: a "nudifier app" whose intended purpose is producing non-consensual intimate imagery is prohibited **even with filters bolted on**. Safeguards only take a general-purpose generative system out of the second limb.
+
+**Art. 5(1b) — carve-out**: manipulation that does **not increase the exposure of any depicted intimate parts** and does **not alter the nature of any depicted sexually explicit activities** does not constitute manipulation for these purposes.
 
 Questions:
-- Does the system have a generative image / video / audio capability that can produce sexual or intimate content depicting identifiable persons?
-- Are there effective technical safeguards (input filters, prompt classifiers, output classifiers, identity-recognition refusals, watermarking + provenance, age-gates, abuse-detection) that prevent generation of non-consensual intimate content and CSAM? Can you evidence their effectiveness?
-- For dual-use generative models distributed open-weight: are downstream safeguards documented and enforceable, or are they trivially bypassable?
+- Is generating or manipulating such material the system's **intended purpose**, on any reading of its marketing, design or documented use cases? If yes, stop — no safeguard argument is available.
+- If not: is it a **reasonably foreseeable and reproducible** outcome of the system as supplied?
+- If so, are the technical safety measures and other safeguards **reasonable and adequate** to prevent it (input filters, prompt classifiers, output classifiers, identity-recognition refusals, age-gates, abuse detection)? Can you evidence their effectiveness against reproducible circumvention, not just casual misuse?
+- For dual-use generative models distributed open-weight: are downstream safeguards documented and enforceable, or trivially bypassable? Bypassability goes to whether the outcome is "reproducible".
+- As deployer: is any actual use of the system directed at generating such material?
 
-Action while pending: flag the system, document the safeguards now, plan a 2 December 2026 deadline once the agreement is published in the OJ. Do not rely on the pending status to skip Article 5 analysis of the existing eight prohibitions, several of which (notably 5(1)(a) deception and 5(1)(b) exploitation of vulnerabilities) may already be triggered by non-consensual deepfake products.
+Action now: flag the system, document the safeguards, and plan remediation against the **2 December 2026** deadline — the provision is enacted, so the deadline is fixed, not conditional. Do not treat the deferred applicability as a reason to skip Article 5 analysis of the existing eight prohibitions, several of which (notably 5(1)(a) deception and 5(1)(b) exploitation of vulnerabilities) may already be triggered by non-consensual deepfake products. Note also that a labelled deep fake is not thereby lawful: Article 50(4) transparency does not permit generating or disseminating unlawful content (Art. 50 Guidelines, point 129).
 
 ## Output
 
@@ -131,9 +144,10 @@ Action while pending: flag the system, document the safeguards now, plan a 2 Dec
 | 6 | Emotion recognition at workplace/education (Art. 5(1)(f)) | ... | ... |
 | 7 | Biometric categorisation inferring sensitive attributes (Art. 5(1)(g)) | ... | ... |
 | 8 | Real-time remote biometric ID in public spaces / law enforcement (Art. 5(1)(h)) | ... | ... |
-| 9* | Non-consensual intimate imagery / CSAM (Digital Omnibus on AI, agreed 7 May 2026, **not yet in force**) | [No / Possibly / Yes — flag for 2 Dec 2026] | [...] |
+| 9* | Non-consensual intimate imagery (Art. 5(1)(ba)) | [No / Possibly / Yes — remediate before 2 Dec 2026] | [intended purpose? foreseeable-and-reproducible outcome without adequate safeguards? deployer using it for that purpose?] |
+| 10* | Child sexual abuse material (Art. 5(1)(bb)) | [No / Possibly / Yes — remediate before 2 Dec 2026] | [...] |
 
-\* Prohibition 9 reflects the provisional political agreement on the Digital Omnibus on AI. It is **not yet legally binding** pending formal adoption and publication in the Official Journal; report it as a forward-looking flag, not as a current Article 5 obligation.
+\* Points (ba) and (bb) were inserted by Regulation (EU) 2026/1744 (in force 27 July 2026) and **apply from 2 December 2026**. Settled law with a deferred application date, not a proposal: report as a fixed forward deadline. Apply the Article 5(1a) limb test — safeguards do not cure an intended-purpose system.
 
 ## Conclusion
 

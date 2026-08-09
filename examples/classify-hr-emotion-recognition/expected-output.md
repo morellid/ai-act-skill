@@ -50,10 +50,13 @@ Even if not prohibited, Article 50(3) deployer obligation applies: the natural p
 
 ## Applicable dates
 
-| Obligation | Applies from | Status | Pending Omnibus delay |
-|---|---|---|---|
-| Article 5 prohibitions | 2 February 2025 | **In force** | — |
-| Annex III high-risk obligations (relevant only if redesigned to clear Art. 5) | 2 August 2026 | Pending | → 2 December 2027 if Digital Omnibus on AI is adopted (in trilogue) |
+| Obligation block | Applies from | Status |
+|---|---|---|
+| Article 5 prohibitions | 2 February 2025 | **In force** |
+| Article 50(3) transparency (if the system is redesigned into a lawful use case) | 2 August 2026 | **In force** |
+| Annex III high-risk obligations (relevant only if redesigned to clear Art. 5) | 2 December 2027 | Not yet applicable |
+
+> Dates per Art. 113 as amended by Reg. (EU) 2026/1744. The Digital Omnibus on AI deferred the Chapter III high-risk dates; it did **not** defer Article 50.
 
 ## Next-task recommendations
 
