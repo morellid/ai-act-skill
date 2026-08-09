@@ -45,13 +45,13 @@ Read first, in order:
 
 ### Pending: Commission draft guidelines on high-risk classification (19 May 2026)
 
-The European Commission published draft **Guidelines on the Classification of High-Risk AI Systems** on 19 May 2026, under Article 96 AI Act. They are in **targeted public consultation until 23 June 2026** and set out the Commission's official interpretation of the concepts used in this task:
+The European Commission published draft **Guidelines on the Classification of High-Risk AI Systems** on 19 May 2026, under Article 96 AI Act. The targeted public consultation, initially open until 23 June 2026, was **extended to 23 July 2026 and has now closed**. The draft sets out the Commission's official interpretation of the concepts used in this task:
 
 - when an AI system embedded in an **Annex I** product qualifies as a **safety component** under Article 6(1)
 - how to assess whether a system falls into one of the eight **Annex III** use-case areas under Article 6(2), with practical examples of systems that ARE and ARE NOT high-risk
 - when the **Article 6(3) derogation** (no significant risk to health, safety or fundamental rights) applies
 
-Tracked as `ec-high-risk-classification-guidelines-draft-2026` in [`references/sources.yaml`](../references/sources.yaml). Final version expected Q3 2026. Until the final version is published, treat the draft as indicative; once finalised it becomes the authoritative Commission interpretation of Articles 6 and Annex III for this classification task and the source `excerpt_paths` will be populated accordingly.
+Tracked as `ec-high-risk-classification-guidelines-draft-2026` in [`references/sources.yaml`](../references/sources.yaml). Final version expected **Q3 2026**, ahead of the 2 December 2027 Annex III application date. Until the final version is published, treat the draft as indicative; once finalised it becomes the Commission's official (non-binding) interpretation of Articles 6 and Annex III for this classification task and the source `excerpt_paths` will be populated accordingly. The adopted Article 50 guidelines already defer to it for the notions of emotion recognition and biometric categorisation (C(2026) 5054 final, points 101 and 103).
 
 ## Procedure
 
@@ -153,25 +153,28 @@ Role can change. Per **Art. 25**, a deployer becomes a provider (with all attend
 
 ### Step 8 — Applicable dates
 
-Apply the phased application calendar (Art. 113):
+Apply the phased application calendar of Article 113, **as amended by Regulation (EU) 2026/1744** (Digital Omnibus on AI, in force 27 July 2026):
 
 - **2 February 2025**: prohibitions (Chapter II) and AI literacy obligations (Art. 4)
 - **2 August 2025**: GPAI obligations (Chapter V), penalties (Chapter XII), governance (Chapter VII)
-- **2 August 2026**: most obligations including transparency (Art. 50) and high-risk for Annex III systems *(pending delay, see below)*
-- **2 August 2027**: high-risk for systems falling under Art. 6(1) (Annex I products with third-party conformity) *(pending delay, see below)*
+- **2 August 2026**: transparency (Art. 50) and the remaining general provisions
+- **2 December 2026**: new Art. 5(1)(ba) and (bb) prohibitions on non-consensual intimate imagery / CSAM generation; end of the Art. 50(2) transitional period for generative systems placed on the market before 2 August 2026
+- **2 December 2027**: high-risk for Annex III stand-alone systems (Chapter III)
+- **2 August 2028**: high-risk for systems falling under Art. 6(1) (Annex I products with third-party conformity)
 
-Note: **GPAI models already on the market on 2 August 2025** have until **2 August 2027** to comply (Art. 111(3)).
+Note: **GPAI models already on the market on 2 August 2025** have until **2 August 2027** to comply (Art. 111(3)). The Art. 111(2) grandfathering for high-risk systems does **not** extend to Article 50.
 
-#### Pending: Digital Omnibus on AI
+#### What Regulation (EU) 2026/1744 changed
 
-The European Commission proposed on 19 November 2025 to amend the AI Act. Following the Council general approach (13 March 2026) and the European Parliament negotiating position (26 March 2026), a **provisional political agreement was reached on 7 May 2026** in trilogue. The agreement confirms:
+Adopted by Parliament 16 June 2026, approved by Council 29 June 2026, published in the OJ 24 July 2026, in force 27 July 2026. It:
 
-- **2 December 2027** — stand-alone high-risk AI systems (Annex III), and Article 50 transparency
-- **2 August 2028** — high-risk AI systems embedded as safety components in Annex I products
-- a **new Article 5 prohibition** on AI systems generating non-consensual intimate imagery ("nudifier apps") and CSAM, with **2 December 2026** compliance once in force
-- a narrowed "safety component" definition (excludes assistive and performance-optimising AI from Annex I high-risk classification)
+- deferred **stand-alone high-risk AI systems (Annex III)** to **2 December 2027**
+- deferred **high-risk AI systems embedded as safety components in Annex I products** to **2 August 2028**
+- added **Article 5(1) points (ba) and (bb)** prohibiting AI systems generating non-consensual intimate imagery ("nudifier apps") and CSAM, applicable from **2 December 2026**, with a scope rule in Article 5(1a)
+- narrowed the "safety component" definition in Art. 3(14) (excludes assistive and performance-optimising AI from Annex I high-risk classification)
+- extended SME simplifications to small mid-cap enterprises (SMCs) and centralised GPAI enforcement in the EU AI Office
 
-The agreement is **pending formal adoption and publication in the Official Journal** (co-legislator target: before 2 August 2026). Until OJ publication, the original Article 113 dates above remain the binding deadlines, and the new Article 5 prohibition is not yet in force. Article 4 (AI literacy), the existing Article 5 prohibitions, and Chapter V GPAI obligations are **not** affected. Whenever the output cites 2 August 2026 (high-risk Annex III, Art. 50) or 2 August 2027 (Annex I), flag the pending move alongside the binding date. When the system in scope could fall under the future nudifier/CSAM prohibition, flag that too.
+**It did not defer Article 50.** Never present Article 50 transparency as moving to December 2027 — it has applied since 2 August 2026. Article 4 (AI literacy), the pre-existing Article 5 prohibitions, and Chapter V GPAI obligations are also unaffected. When the system in scope could fall under the new nudifier/CSAM prohibitions, flag the 2 December 2026 deadline and route to `check-prohibited-practices.md` for the Art. 5(1a) limb test.
 
 ### Step 9 — Output
 
@@ -210,14 +213,16 @@ Produce a markdown report:
 
 ## Applicable dates
 
-| Obligation block | Applies from | Status as of [today] | Pending Omnibus delay |
-|---|---|---|---|
-| Prohibitions (Art. 5) + AI literacy (Art. 4) | 2 February 2025 | In force | — |
-| GPAI obligations (Chapter V) | 2 August 2025 | In force | — |
-| Most obligations (incl. high-risk Annex III, transparency Art. 50) | 2 August 2026 | [In force / Pending] | → 2 December 2027 (Digital Omnibus on AI, in trilogue) |
-| High-risk under Art. 6(1) (Annex I products) | 2 August 2027 | Pending | → 2 August 2028 (Digital Omnibus on AI, in trilogue) |
+| Obligation block | Applies from | Status |
+|---|---|---|
+| Prohibitions (Art. 5(1)(a)-(h)), AI literacy (Art. 4) | 2 February 2025 | In force |
+| GPAI obligations (Chapter V), penalties, governance | 2 August 2025 | In force |
+| Art. 50 transparency | 2 August 2026 | In force |
+| New Art. 5(1)(ba)/(bb) NCII and CSAM prohibitions | 2 December 2026 | Enacted, not yet applicable |
+| High-risk Annex III (Ch. III) | 2 December 2027 | Not yet applicable |
+| High-risk Annex I (Art. 6(1)) | 2 August 2028 | Not yet applicable |
 
-> The Digital Omnibus on AI (Commission proposal, 19 November 2025; provisional political agreement 7 May 2026) would shift the high-risk and Article 50 dates as shown and would add a new Article 5 prohibition on non-consensual intimate imagery / CSAM (compliance 2 December 2026). **Formal adoption pending.** Original Art. 113 dates remain binding and the new prohibition is not yet in force until publication in the OJ.
+> Dates per Art. 113 as amended by Reg. (EU) 2026/1744.
 
 ## Next-task recommendations
 

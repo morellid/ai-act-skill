@@ -1,6 +1,6 @@
 schema_version: 1
 skill: ai-act-compliance
-last_verified: 2026-05-18
+last_verified: 2026-08-09
 
 sources:
   - id: ai-act-en-eurlex
@@ -129,68 +129,122 @@ sources:
       with data-protection implications. Useful in conjunction with
       Article 27 FRIA (combine with GDPR DPIA) and high-risk biometrics.
 
-  - id: ec-art50-transparency-guidelines-draft-2026
-    title: "Draft Guidelines on the implementation of the transparency obligations for certain AI systems under Article 50 AI Act — European Commission (8 May 2026)"
-    type: commission-guidelines-draft
-    url: https://digital-strategy.ec.europa.eu/en/library/draft-guidelines-implementation-transparency-obligations-certain-ai-systems-under-article-50-ai-act
-    alt_url: https://digital-strategy.ec.europa.eu/en/consultations/consultation-draft-guidelines-transparency-obligations-under-ai-act
+  - id: ec-art50-transparency-guidelines
+    title: "Guidelines on the implementation of the transparency obligations for certain AI systems under Article 50 of Regulation (EU) 2024/1689 — European Commission, C(2026) 5054 final (20 July 2026)"
+    type: commission-guidelines
+    url: https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems
     download_urls:
-      - https://ec.europa.eu/newsroom/dae/redirection/document/128275
-    accessed: 2026-05-18
+      - https://ai-act-service-desk.ec.europa.eu/sites/default/files/2026-07/guidelines_on_the_implementation_of_the_transparency_obligations_for_certain_ai_systems_under_article_50_of_the_ai_act_bzptwqhk0ikg1dtlddap41psfy_131215.pdf
+    accessed: 2026-08-09
     sha256: null
     license: public-domain-eu-doc
     binary_path: null
-    excerpt_paths: []
-    status: draft-in-consultation
-    consultation_deadline: 2026-06-03
+    excerpt_paths:
+      - references/extracts/ec-art50-transparency-guidelines.md
+    status: final
     notes: |
-      Commission (DG CNECT / EU AI Office) draft guidelines clarifying
-      the implementation of Article 50 transparency obligations.
-      Status as of 2026-05-18: DRAFT, in public consultation. Deadline
-      for submissions: 3 June 2026. Final guidelines expected Q2/Q3 2026
-      before the Article 50 application date (2 August 2026 under the
-      original Art. 113 calendar; 2 December 2027 if the Digital Omnibus
-      on AI is published in the OJ — see `digital-omnibus-ai-2025`).
+      FINAL. Adopted 20 July 2026 as C(2026) 5054 final (ANNEX to the
+      Communication to the Commission), 51 pages, 155 numbered points.
+      Issued under Article 96(1)(d) AI Act. Supersedes the draft of
+      8 May 2026 that was in public consultation until 3 June 2026.
+      NON-BINDING (point 5): only the CJEU can give an authoritative
+      interpretation of the AI Act. Cite as persuasive Commission
+      interpretation, never as the legal norm itself.
       Scope (all four blocks of Article 50):
         - Art. 50(1) — provider duty to inform users when they are
           interacting with an AI system (chatbot disclosure)
         - Art. 50(2) — provider duty to embed machine-readable marks
-          enabling detection of synthetic content (watermarking)
+          AND ensure detection of synthetic content
         - Art. 50(3) — deployer duty to disclose emotion recognition
           and biometric categorisation systems
-        - Art. 50(4) — deployer duty to disclose deepfakes and AI-
+        - Art. 50(4) — deployer duty to disclose deep fakes and AI-
           generated publications on matters of public interest
-      Published in parallel with the Code of Practice on marking and
-      labelling of AI-generated content (second draft 5 March 2026).
-      The guidelines clarify legal obligations; the Code covers what
-      the law does not specify.
-      Online consultation form:
-        https://ec.europa.eu/eusurvey/runner/Art50guidelines
-      Cite as: draft Commission guidelines, not yet finalised. Once
-      finalised, promote to a citable source and create a textual
-      extract under `references/extracts/`.
+        - Art. 50(5) — horizontal delivery requirements
+        - Section 8 — enforcement, penalties, entry into application
+      Confirms at points 2 and 153 that Article 50 applies from
+      2 August 2026 and was NOT delayed by the Digital Omnibus. The
+      only Omnibus relief is a targeted grandfathering of the Art.
+      50(2) marking and detection obligations for generative AI
+      systems placed on the market before 2 August 2026, which have
+      until 2 December 2026 (see `digital-omnibus-ai-2026`).
+      Point 154: content generated before 2 August 2026 need not be
+      marked or labelled retroactively, but text generated before and
+      published on or after that date must be labelled.
+      Companion Commission guidelines cross-referenced in the text:
+        - prohibited practices, C(2025) 5052 final
+        - definition of an AI system, C(2025) 5053 final
+        - classification of high-risk AI systems (relied on at points
+          101 and 103 for emotion recognition and biometric
+          categorisation) — see
+          `ec-high-risk-classification-guidelines-draft-2026`
+      Textual extract: `references/extracts/ec-art50-transparency-guidelines.md`
+
+  - id: code-of-practice-transparency-ai-content-2026
+    title: "Code of Practice on Transparency of AI-Generated Content — final version (10 June 2026)"
+    type: voluntary-code
+    url: https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content
+    accessed: 2026-08-09
+    sha256: null
+    license: public-domain-eu-doc
+    binary_path: null
+    excerpt_paths: []
+    status: final
+    notes: |
+      Voluntary code of practice published 10 June 2026, drawn up under
+      Article 50(7) AI Act to facilitate implementation of the marking,
+      detection and labelling obligations in Article 50(2), (4) and (5).
+      Covers machine-readable marking and detection of AI-generated
+      content, deep fake labelling, and labelling of AI-generated text
+      published on matters of public interest.
+      Per the Commission's Article 50 guidelines (points 146-149), a code
+      assessed as adequate under Article 50(7) is the only Union-wide
+      recognised practical framework for demonstrating compliance with
+      those obligations. Adherence is voluntary but is described as the
+      "straightforward, predictable and legally certain" route:
+        - signatories: supervision focuses on whether they have adhered
+          and implemented the measures; opting out of sections forfeits
+          the benefit for those sections
+        - non-signatories: expected to demonstrate compliance by other
+          adequate means AND explain how their measures achieve it,
+          e.g. via a gap analysis against the code; likely to receive
+          more detailed information and access requests
+        - commitments implemented under an adequate code may be a
+          mitigating factor when fixing fines (Art. 99(7)(e))
+      If no code is deemed adequate, the Commission may adopt an
+      implementing act specifying common rules binding on all relevant
+      providers and deployers (Art. 50(7)).
+      Commission Opinion on the assessment of the Code is published on
+      the same Shaping Europe's digital future portal.
+      Not yet hashed or extracted; add a textual extract if the skill
+      starts advising on signature decisions.
 
   - id: ec-high-risk-classification-guidelines-draft-2026
     title: "Draft Commission Guidelines on the Classification of High-Risk AI Systems — European Commission (19 May 2026)"
     type: commission-guidelines-draft
     url: https://digital-strategy.ec.europa.eu/en/library/draft-commission-guidelines-classification-high-risk-ai-systems
     alt_url: https://digital-strategy.ec.europa.eu/en/consultations/targeted-consultation-draft-guidelines-classification-high-risk-artificial-intelligence-systems
-    accessed: 2026-05-31
+    accessed: 2026-08-09
     sha256: null
     license: public-domain-eu-doc
     binary_path: null
     excerpt_paths: []
-    status: draft-in-consultation
-    consultation_deadline: 2026-06-23
+    status: draft-consultation-closed
+    consultation_deadline: 2026-07-23
     notes: |
       Commission (DG CNECT / EU AI Office) draft guidelines required
       by Article 96 AI Act (deadline: no later than 2 February 2026),
       setting out the Commission's official interpretation of the
       concepts used to classify AI systems as high-risk under Article 6
       and Annex III.
-      Status as of 2026-05-31: DRAFT, in targeted public consultation.
-      Deadline for submissions: 23 June 2026 (22:00 CET). Final
-      guidelines expected Q3 2026.
+      Status as of 2026-08-09: STILL DRAFT. The targeted consultation
+      was extended from 23 June to 23 July 2026 and has now closed.
+      No final version published yet; expected Q3 2026, ahead of the
+      2 December 2027 Annex III application date set by Regulation
+      (EU) 2026/1744. Re-check before relying on the draft.
+      The Commission's final Article 50 guidelines (C(2026) 5054 final,
+      20 July 2026) already rely on these draft guidelines at points
+      101 and 103 for the notions of 'emotion recognition system'
+      (Art. 3(39)) and 'biometric categorisation system' (Art. 3(40)).
       Scope:
         - Art. 6(1) — when an AI system embedded in an Annex I product
           qualifies as a "safety component" requiring third-party
@@ -210,57 +264,94 @@ sources:
       and cross-reference from
       `references/extracts/ai-act-art-6-9-high-risk-classification.md`.
 
-  - id: digital-omnibus-ai-2025
-    title: "Digital Omnibus on AI — amendment to Regulation (EU) 2024/1689 (Commission proposal 19 November 2025; provisional political agreement 7 May 2026)"
-    type: legislative-proposal
-    url: https://www.europarl.europa.eu/legislative-train/package-digital-package/file-digital-omnibus-on-ai
+  - id: digital-omnibus-ai-2026
+    title: "Regulation (EU) 2026/1744 of the European Parliament and of the Council of 8 July 2026 amending Regulations (EU) 2024/1689, (EU) 2018/1139 and (EU) 2023/1230 as regards the simplification of the implementation of harmonised rules on artificial intelligence (Digital Omnibus on AI)"
+    type: regulation-eu
+    url: https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng
     alt_url: https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-ai
-    accessed: 2026-05-18
+    accessed: 2026-08-09
     sha256: null
-    license: public-domain-eu-doc
+    license: public-domain-eu-law
     binary_path: null
     excerpt_paths: []
+    status: in-force
     notes: |
-      Commission proposal of 19 November 2025 to amend Regulation (EU)
-      2024/1689 (the AI Act).
-      Status as of 2026-05-18: PROVISIONAL POLITICAL AGREEMENT REACHED
-      on 7 May 2026 between Parliament and Council. Formal adoption by
-      both co-legislators and publication in the Official Journal are
-      pending (co-legislator target: before 2 August 2026).
+      IN FORCE. Published in the Official Journal on 24 July 2026 and
+      entered into force on 27 July 2026. Amends Regulation (EU)
+      2024/1689 (the AI Act) as well as Regulations (EU) 2018/1139
+      (civil aviation) and (EU) 2023/1230 (machinery).
       Legislative trail:
         - Commission proposal: 19 November 2025
         - Council general approach: 13 March 2026
         - European Parliament negotiating position: 26 March 2026
         - Provisional political agreement: 7 May 2026
-      Substantive content of the agreement:
-        - High-risk application dates shifted:
+        - European Parliament adoption: 16 June 2026
+        - Council final approval: 29 June 2026
+        - Signature: 8 July 2026
+        - OJ publication: 24 July 2026 / entry into force: 27 July 2026
+      Substantive content:
+        - Chapter III high-risk application dates deferred:
             * 2 December 2027 — stand-alone high-risk AI systems
-                                (Annex III) and Article 50 transparency
+                                (Annex III)
             * 2 August 2028  — high-risk AI systems embedded as safety
                                 components in Annex I products
+        - ARTICLE 50 WAS NOT DEFERRED. Article 50 transparency applies
+          from 2 August 2026 as originally enacted. The only relief is
+          a targeted grandfathering of the Article 50(2) marking and
+          detection obligations for generative AI systems placed on
+          the market or put into service before 2 August 2026, which
+          have a transitional period until 2 December 2026. Systems
+          that are partly interactive and partly generative benefit
+          only as regards the Art. 50(2) marking; the Art. 50(1)
+          disclosure duty applies from 2 August 2026. Confirmed by the
+          Commission's Article 50 guidelines, C(2026) 5054 final,
+          points 2 and 153 — see `ec-art50-transparency-guidelines`.
         - NEW Article 5 prohibition: AI systems that generate or
           manipulate sexual / intimate images, video or audio
           resembling an identifiable real person without that person's
           consent ("nudifier apps"), and AI systems generating child
-          sexual abuse material. Compliance deadline: 2 December 2026
-          (once in force). Exception: AI systems with effective safety
-          measures preventing users from creating such content.
-        - Narrowed "safety component" definition (excludes assistive
-          or performance-optimising AI from Annex I high-risk).
-        - SME exemptions extended to small mid-cap enterprises (SMCs).
+          sexual abuse material. Applicable from 2 December 2026.
+          Exception: AI systems with effective safety measures
+          preventing users from creating such content. Reported to be
+          inserted as new points in Article 5(1) with a new Article
+          5(1a) splitting provider and deployer duties; the exact
+          point lettering has not been verified against the OJ text
+          (see the caveat below) — cite "the new Article 5
+          prohibition introduced by Reg. (EU) 2026/1744" rather than a
+          specific sub-letter.
+        - Narrowed "safety component" definition in Art. 3(14)
+          (excludes assistive or performance-optimising AI from
+          Annex I high-risk).
+        - SME simplifications extended to small mid-cap enterprises
+          (SMCs).
         - Overlapping requirements for AI in machinery products
           eliminated (sectoral rules apply instead).
-        - Personal-data processing permitted to detect and correct
-          biases in high-risk and non-high-risk systems.
-        - GPAI enforcement streamlined through the EU AI Office.
-      Article 4 (AI literacy) and the existing Article 5 prohibitions
-      — in force since 2 February 2025 — and Chapter V GPAI obligations
-      — in force since 2 August 2025 — are NOT affected.
-      Until publication in the Official Journal, the original Art. 113
-      dates of Regulation (EU) 2024/1689 remain legally binding and the
-      new Article 5 prohibition is not yet in force. Promote to a
-      primary citable source with a textual extract once published in
-      the OJ.
+        - Special-category personal-data processing to detect and
+          correct bias extended to all AI systems and GPAI models,
+          not only high-risk systems.
+        - GPAI enforcement centralised in the EU AI Office, with
+          exclusive competence over AI systems built on GPAI models
+          from the same provider and systems integrated into VLOPs /
+          VLOSEs, and periodic penalty payments of up to 5% of
+          average daily worldwide turnover.
+        - National regulatory sandboxes deadline moved to
+          2 August 2027.
+      Article 4 (AI literacy) and the pre-existing Article 5
+      prohibitions — in force since 2 February 2025 — and Chapter V
+      GPAI obligations — in force since 2 August 2025 — are NOT
+      affected.
+      VERIFICATION STATUS (2026-08-09): the OJ text was retrieved via
+      https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744
+      and the new Article 5(1) points (ba) and (bb) are quoted verbatim
+      in `references/extracts/ai-act-art-5-prohibited.md`; Art. 5(1a)
+      and 5(1b) are close paraphrases from the same retrieval. The HTML
+      rendition truncated mid-Article 63, so the **exact wording of the
+      amended Article 113** could not be read in full: the dates above
+      are grounded on Commission pages on digital-strategy.ec.europa.eu
+      and on the adopted Article 50 guidelines C(2026) 5054 final
+      (points 2 and 153). Before relying on the amended Art. 113 wording
+      verbatim, re-verify against the ELI URL above and add a textual
+      extract under `references/extracts/`.
       Tracked by:
         - Commission press release IP/26/1024 (7 May 2026):
           https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1024
@@ -270,6 +361,28 @@ sources:
           https://www.europarl.europa.eu/news/en/press-room/20260323IPR38829/artificial-intelligence-act-delayed-application-ban-on-nudifier-apps
         - IAPP analysis:
           https://iapp.org/news/a/eu-digital-omnibus-analysis-of-key-changes
+
+  - id: eu-action-plan-cybersecurity-ai-2026
+    title: "EU Action Plan on Cybersecurity and Artificial Intelligence — European Commission (7 July 2026)"
+    type: policy-strategy
+    url: https://digital-strategy.ec.europa.eu/en/policies/action-plan-cybersecurity-and-ai
+    accessed: 2026-08-09
+    sha256: null
+    license: public-domain-eu-doc
+    binary_path: null
+    excerpt_paths: []
+    status: final
+    notes: |
+      Non-binding strategic framework published 7 July 2026 setting out
+      Commission actions on the intersection of cybersecurity and AI:
+      securing AI systems against adversarial threats, using AI for
+      cyber defence, and coordination between the AI Act and the
+      cybersecurity acquis (NIS2, Cyber Resilience Act).
+      SECONDARY SOURCE ONLY. It creates no obligations. Relevant as
+      context for Article 15 AI Act (accuracy, robustness and
+      cybersecurity of high-risk systems) and for the robustness
+      requirement on Article 50(2) marking solutions against
+      adversarial attacks. Do not cite it as a compliance requirement.
 
 # Recommended validation tools and resources (used to test the skill's outputs)
 validation_resources:

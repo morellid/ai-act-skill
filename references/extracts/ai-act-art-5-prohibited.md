@@ -64,6 +64,21 @@ Non-compliance with the prohibitions in Article 5 is subject to the **highest ti
 
 ---
 
-## Pending addition — Digital Omnibus on AI (provisional political agreement, 7 May 2026)
+## Addition by Regulation (EU) 2026/1744 — Art. 5(1)(ba), (bb) and Art. 5(1a), (1b)
 
-> **Not yet in force.** The provisional political agreement reached between Parliament and Council on 7 May 2026 adds a new prohibition to Article 5: AI systems that **generate or manipulate sexual / intimate images, video or audio resembling an identifiable real person without that person's consent** ("nudifier apps"), and AI systems that **generate child sexual abuse material**. **Exception**: AI systems with effective safety measures preventing users from creating such content. **Compliance deadline once in force**: 2 December 2026. The new sub-letter and final wording will be confirmed at OJ publication. Track via `sources.yaml` id `digital-omnibus-ai-2025`; promote a textual extract here once published in the Official Journal.
+**Source**: Regulation (EU) 2026/1744 (Digital Omnibus on AI), OJ 24 July 2026, in force 27 July 2026. **Applicable from 2 December 2026.** See `sources.yaml` id `digital-omnibus-ai-2026`.
+
+**Article 5(1)(ba)** — the placing on the market, the putting into service or the use of an AI system that **generates or manipulates realistic images, videos, audio or similar material of an identifiable natural person's intimate parts, or of an identifiable natural person engaged in sexually explicit activities, without that person's freely-given, specific, informed, unambiguous and explicit consent** for that generation or manipulation.
+
+**Article 5(1)(bb)** — the placing on the market, the putting into service or the use of an AI system that **generates or manipulates material or performance within the meaning of Article 2, points (c) and (e), of Directive 2011/93/EU** (child sexual abuse material and child sexual abuse performances), subject to any 'without right' defence available under national law.
+
+**Article 5(1a)** — scope of the two prohibitions:
+
+- **Placing on the market / putting into service** is prohibited where the generation or manipulation of such material is **(i) the intended purpose** of the AI system, **or (ii) a reasonably foreseeable and reproducible outcome** of it in the absence of **reasonable and adequate technical safety measures and other safeguards** to prevent it.
+- **Use** is prohibited **only where the deployer uses the system for the purpose of** generating or manipulating such material.
+
+> **Do not read this as a blanket safeguards exception.** Safeguards are relevant **only** to limb (ii). A system whose intended purpose is generating such material is prohibited irrespective of the safeguards attached to it.
+
+**Article 5(1b)** — manipulation that does **not increase the exposure of any depicted intimate parts** and does **not alter the nature of any depicted sexually explicit activities** does not constitute manipulation for the purposes of points (ba) and (bb).
+
+*Wording above is quoted from the OJ text of Reg. (EU) 2026/1744 as retrieved on 2026-08-09. Points (ba) and (bb) are quoted verbatim; Art. 5(1a) and 5(1b) are close paraphrases of the retrieved text — re-verify against the consolidated OJ before relying on their exact formulation.*

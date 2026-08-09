@@ -5,7 +5,7 @@
 **Accessed**: 2026-04-25
 **Licence**: EU legislative text — public domain
 **Citation**: Regulation (EU) 2024/1689, Art. 50
-**Application**: from **2 August 2026** (Art. 113(c)) *(pending: Digital Omnibus on AI proposes 2 December 2027; in trilogue, not yet adopted — see `digital-omnibus-ai-2025` in `sources.yaml`)*
+**Application**: **in force since 2 August 2026** — the general application date in Art. 113, first subparagraph (Art. 113(c) governs the Chapter III high-risk schedule, not Article 50). Article 50 was **not** deferred by Reg. (EU) 2026/1744 (Digital Omnibus on AI), which moved only the Chapter III high-risk dates. Single transitional relief: generative AI systems placed on the market or put into service before 2 August 2026 have until **2 December 2026** to comply with the Art. 50(2) marking and detection duty. See `digital-omnibus-ai-2026` and `ec-art50-transparency-guidelines` in `sources.yaml`.
 
 ---
 
@@ -41,3 +41,4 @@ Deployers of an AI system that generates or manipulates **text** which is **publ
 - Machine-readable marking (50(2)) — track CEN-CENELEC standards and C2PA Content Credentials as the leading interoperable approach.
 - Editorial-responsibility exception in 50(4) text branch shields newsrooms with proper review processes; pure AI-published content needs disclosure.
 - Penalties: up to **EUR 15 000 000 or 3% of total worldwide annual turnover** (Art. 99(4)).
+- For the Commission's interpretation of each block, read [`ec-art50-transparency-guidelines.md`](ec-art50-transparency-guidelines.md) — the adopted Guidelines of 20 July 2026 (C(2026) 5054 final). They are the Commission's official reading but are **non-binding**; the norm remains Article 50 itself, and only the CJEU can interpret it authoritatively.

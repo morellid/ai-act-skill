@@ -77,28 +77,33 @@ Always run `scripts/validate.sh` before committing.
 
 ## Key dates to keep in mind
 
-The AI Act has phased application:
+The AI Act has phased application. Dates below are per Article 113 **as amended by Regulation (EU) 2026/1744**:
 
 - **2 February 2025** — prohibitions (Art. 5) and AI literacy (Art. 4) in force
 - **2 August 2025** — GPAI obligations (Chapter V), penalties, governance in force
-- **2 August 2026** — most obligations including high-risk Annex III and Article 50 transparency *(pending delay — see Digital Omnibus below)*
-- **2 August 2027** — high-risk Annex I products *(pending delay — see Digital Omnibus below)*
+- **2 August 2026** — **Article 50 transparency in force**, plus the remaining general provisions
+- **2 December 2026** — new Art. 5(1)(ba) and (bb) prohibitions on NCII / CSAM generation; end of the Art. 50(2) transitional period for pre-existing generative systems
+- **2 December 2027** — high-risk Annex III stand-alone systems (Chapter III)
+- **2 August 2028** — high-risk AI embedded as safety components in Annex I products
 
-### Pending: Digital Omnibus on AI
+### In force: Digital Omnibus on AI — Regulation (EU) 2026/1744
 
-On 19 November 2025 the European Commission proposed delaying the high-risk application dates. The Council reached general approach on 13 March 2026; the European Parliament adopted its negotiating position on 26 March 2026. A **provisional political agreement was reached on 7 May 2026** between the two co-legislators in trilogue. The agreement:
+Adopted by Parliament on 16 June 2026, approved by Council on 29 June 2026, signed 8 July 2026, published in the OJ on 24 July 2026, **in force since 27 July 2026**. It:
 
-- shifts **stand-alone high-risk AI systems (Annex III) and Article 50 transparency** to **2 December 2027**
-- shifts **high-risk AI systems embedded as safety components in Annex I products** to **2 August 2028**
-- adds a **new Article 5 prohibition** on AI systems generating non-consensual intimate imagery ("nudifier apps") and CSAM, with a **2 December 2026** compliance deadline once in force (with an exception for systems that have effective safety measures preventing such content)
-- narrows the "safety component" definition (excludes assistive and performance-optimising AI from Annex I high-risk classification)
-- extends SME exemptions to small mid-cap enterprises (SMCs)
-- permits personal-data processing to detect and correct bias in high-risk and non-high-risk systems
-- streamlines GPAI enforcement through the EU AI Office
+- defers **stand-alone high-risk AI systems (Annex III)** to **2 December 2027**
+- defers **high-risk AI systems embedded as safety components in Annex I products** to **2 August 2028**
+- adds **Article 5(1) points (ba) and (bb)** prohibiting AI systems generating non-consensual intimate imagery ("nudifier apps") and CSAM, applicable from **2 December 2026**. Article 5(1a) limits the placing-on-the-market limb to systems whose **intended purpose** is such generation (safeguards irrelevant) or where it is a **reasonably foreseeable and reproducible outcome** absent reasonable and adequate safeguards; the use limb bites only where the deployer uses the system **for that purpose**
+- narrows the "safety component" definition in Art. 3(14) (excludes assistive and performance-optimising AI from Annex I high-risk classification)
+- extends SME simplifications to small mid-cap enterprises (SMCs)
+- extends the legal basis for processing special categories of personal data to detect and correct bias beyond high-risk systems
+- centralises GPAI enforcement in the EU AI Office, with periodic penalty payments up to 5% of average daily worldwide turnover
+- moves the national regulatory sandbox deadline to 2 August 2027
 
-The agreement is **pending formal adoption and publication in the Official Journal** (co-legislator target: before 2 August 2026). Until OJ publication, the original Article 113 dates remain the legally binding deadlines, and the new Article 5 prohibition is not yet in force. The 2 February 2025 (prohibitions, AI literacy) and 2 August 2025 (GPAI, penalties, governance) dates are **not** affected by the Omnibus.
+**It did NOT defer Article 50.** Article 50 transparency has applied since **2 August 2026**. The sole relief is a transitional period until **2 December 2026** for the Art. 50(2) marking and detection duty, and only for generative AI systems placed on the market or put into service before 2 August 2026; Art. 50(1) disclosure applies from 2 August 2026 with no transitional period (Commission Guidelines C(2026) 5054 final, points 2 and 153). Any text in this repository that presents Article 50 as delayed to December 2027 is a compliance-critical error and must be corrected.
 
-When updating tasks or extracts, check that the dates of application referenced are still consistent with these phases, that the pending Omnibus change is flagged whenever the 2 August 2026 or 2 August 2027 dates are cited, and that systems potentially in scope of the future nudifier/CSAM prohibition are flagged.
+The 2 February 2025 (prohibitions, AI literacy) and 2 August 2025 (GPAI, penalties, governance) dates are **not** affected by the Omnibus.
+
+When updating tasks or extracts, check that the dates of application referenced match the list above, that Article 50 is never presented as deferred, and that systems potentially in scope of the new nudifier/CSAM prohibition are flagged.
 
 ## Disclaimer
 
