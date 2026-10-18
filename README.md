@@ -215,7 +215,7 @@ For external validation resources (the AI Act is not amenable to fully automated
 
 - The Commission's official Compliance Checker at the AI Act Service Desk
 - The artificialintelligenceact.eu open-source tracker
-- Harmonised standards under preparation by CEN-CENELEC JTC 21 (publication expected from 2026)
+- Harmonised standards: EN 18286:2026 (QMS) referenced by Commission Implementing Decision (EU) 2026/2274 (OJ 14 October 2026); further standards under preparation by CEN-CENELEC JTC 21
 
 ## Contributing
 

@@ -29,7 +29,7 @@ Use when someone needs to:
 
 ## Disclaimer
 
-This skill is a support tool for compliance work, not a substitute for qualified legal or technical counsel. The AI Act is recent legislation with phased application (obligations phased between 2 February 2025 and 2 August 2028) and the harmonised standards under preparation by CEN-CENELEC JTC 21 are not yet published. **Outputs require review by competent counsel and, for high-risk systems, by a notified body where applicable.** Penalties under Article 99 reach EUR 35 million or 7% of total worldwide annual turnover for prohibited-practice violations.
+This skill is a support tool for compliance work, not a substitute for qualified legal or technical counsel. The AI Act is recent legislation with phased application (obligations phased between 2 February 2025 and 2 August 2028) and harmonised standards are only starting to be referenced: the first, EN 18286:2026 (quality management system), was referenced by Commission Implementing Decision (EU) 2026/2274 (OJ 14 October 2026), while standards for most Section 2 requirements (Articles 9-15) are still under preparation by CEN-CENELEC JTC 21. **Outputs require review by competent counsel and, for high-risk systems, by a notified body where applicable.** Penalties under Article 99 reach EUR 35 million or 7% of total worldwide annual turnover for prohibited-practice violations.
 
 **In force: Digital Omnibus on AI — Regulation (EU) 2026/1744.** Published in the OJ on 24 July 2026, in force since 27 July 2026. It: (i) defers the **Chapter III high-risk** dates to **2 December 2027** (Annex III stand-alone systems) and **2 August 2028** (Annex I embedded safety components); (ii) adds new Article 5(1) points **(ba)** and **(bb)** prohibiting AI systems generating non-consensual intimate imagery ("nudifier apps") and CSAM, applicable from **2 December 2026** (see Art. 5(1a): safeguards are relevant only where the prohibited output is a foreseeable outcome, not where it is the intended purpose); (iii) narrows the "safety component" definition in Art. 3(14); (iv) extends SME simplifications to small mid-cap enterprises; (v) centralises GPAI enforcement in the EU AI Office.
 
@@ -61,17 +61,19 @@ If the request is generic ("help me with the AI Act"), start with classification
 
 Authoritative references in [`references/sources.yaml`](references/sources.yaml). Primary:
 
-- **Regulation (EU) 2024/1689** (the AI Act) — Articles cited: 3, 5, 6, 9, 10, 14, 15, 16, 22, 26, 27, 50, 51, 53, 55, 99; Annex III
+- **Regulation (EU) 2024/1689** (the AI Act) — Articles cited: 3, 5, 6, 9, 10, 14, 15, 16, 17, 22, 26, 27, 40, 43, 50, 51, 53, 55, 99; Annex III
 - **Regulation (EU) 2026/1744** (Digital Omnibus on AI, in force 27 July 2026) — amends the Art. 113 calendar and Article 5
 - **Commission Guidelines on Article 50 transparency obligations** (C(2026) 5054 final, 20 July 2026) — the Commission's official interpretation of Article 50; **non-binding** (only the CJEU can interpret authoritatively). Extract in [`references/extracts/ec-art50-transparency-guidelines.md`](references/extracts/ec-art50-transparency-guidelines.md)
 - **GPAI Code of Practice** (final version July 2025) — voluntary tool to demonstrate compliance with Article 53
 - **Code of Practice on Transparency of AI-generated Content** (final 10 June 2026) — voluntary tool to demonstrate compliance with Article 50(2), (4) and (5)
 - **Commission Guidelines on the scope of obligations for providers of GPAI models** (July 2025)
-- **CEN-CENELEC JTC 21** — harmonised standards under preparation (track the published list at <https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation>)
+- **Commission Implementing Decision (EU) 2026/2274** (12 October 2026, OJ L, 2026/2274, 14.10.2026) — first harmonised standard referenced for high-risk AI systems: **EN 18286:2026** *Artificial intelligence - Quality management system for EU AI Act regulatory purposes*, no restrictions. Under Article 40(1) conformity gives a presumption of conformity only to the extent the standard covers the Section 2 requirements (Articles 8-15); the Decision does not map the standard to articles, so check the standard's own coverage before relying on the presumption for any specific requirement
+- **CEN-CENELEC JTC 21** — further harmonised standards under preparation (track the published list at <https://single-market-economy.ec.europa.eu/single-market/goods/european-standards/harmonised-standards/artificial-intelligence-ai_en> and <https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation>)
 
 Pending (track, treat as indicative until finalised):
 
 - **Commission draft guidelines on the classification of high-risk AI systems** (19 May 2026) — `sources.yaml` id `ec-high-risk-classification-guidelines-draft-2026`. Required by Article 96 AI Act. Targeted consultation closed 23 July 2026; final version expected Q3 2026, ahead of the 2 December 2027 Annex III date. Will become the Commission's official (non-binding) interpretation of Article 6 and Annex III (safety-component test, Annex III use-case examples, Art. 6(3) derogation) once final; promote to a primary source with a textual extract at that point.
+- **Draft Commission implementing regulation on proceedings under Articles 75c and 75d** (Ares(2026)9589403, 12 October 2026) — `sources.yaml` id `ec-implementing-act-art-75c-75d-draft-2026`. Feedback until 9 November 2026; adoption planned Q4 2026. Content not yet verified against the official text: do not cite until adopted.
 
 Textual extracts of the cited articles in [`references/extracts/`](references/extracts/).
 
