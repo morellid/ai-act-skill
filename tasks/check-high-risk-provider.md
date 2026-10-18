@@ -25,6 +25,7 @@ Produce a structured gap analysis covering each obligation, indicating: **met / 
 Read first:
 
 - [`references/extracts/ai-act-art-6-9-high-risk-classification.md`](../references/extracts/ai-act-art-6-9-high-risk-classification.md) — Articles 6, 8, 9
+- **Harmonised standards (Art. 40)**: Commission Implementing Decision (EU) 2026/2274 (OJ L, 2026/2274, 14.10.2026, <https://eur-lex.europa.eu/eli/dec_impl/2026/2274/oj>) references **EN 18286:2026** (QMS for EU AI Act regulatory purposes), the first and so far only harmonised standard for high-risk AI systems. Conformity with a referenced standard gives a **presumption of conformity with the Section 2 requirements (Articles 8-15) only to the extent the standard covers them** (Art. 40(1)). Check `references/sources.yaml` (`ec-implementing-decision-2026-2274`) for later decisions before assuming a requirement has no standard.
 - The full text of Articles 10 to 22 (data governance, technical documentation, record-keeping, transparency to deployers, human oversight, accuracy/robustness/cybersecurity, QMS, technical documentation retention, automatically generated logs, conformity assessment, EU declaration, CE marking, registration, post-market monitoring) — these are not all extracted yet; cite the article numbers and refer to the source PDF in `not_in_repo/` if available, or to <https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng>
 
 ## Procedure — gap analysis per obligation
@@ -116,7 +117,7 @@ Providers of high-risk AI systems shall:
 Providers established outside the Union shall, by written mandate, appoint an **authorised representative** in the Union (Art. 22).
 
 #### Art. 17 — Quality management system
-Documented system covering: regulatory compliance strategy, design control, technical specs, data management, risk management, post-market monitoring, communication with authorities, record-keeping, resource management, accountability framework. Article 17(2) provides simplifications for financial institutions already subject to QMS rules under EU financial-services law.
+Documented system covering: regulatory compliance strategy, design control, technical specs, data management, risk management, post-market monitoring, communication with authorities, record-keeping, resource management, accountability framework. **EN 18286:2026** (referenced by Implementing Decision (EU) 2026/2274) is the harmonised standard for this QMS: record whether the provider applies it, in full or in part. Article 17(2) provides simplifications for financial institutions already subject to QMS rules under EU financial-services law.
 
 #### Art. 18 — Documentation kept by provider
 The provider keeps at the disposal of national competent authorities for **10 years** after the system is placed on the market or put into service:
@@ -173,7 +174,7 @@ Overall readiness: [Ready for conformity assessment / Significant gaps / Critica
 
 - For Annex I systems: follow the third-party conformity assessment procedure under the relevant Union harmonisation legislation, integrated with AI Act requirements.
 - For most Annex III systems: **internal control** procedure (Annex VI) — provider self-assesses, no notified body involvement, but documentation must be available on request.
-- For Annex III paragraph 1 systems (biometrics): if no harmonised standards are applied or only partial, **third-party conformity assessment** by a notified body (Annex VII).
+- For Annex III paragraph 1 systems (biometrics): if no harmonised standards are applied or only partial, **third-party conformity assessment** by a notified body (Annex VII). Art. 43(1) makes Annex VII mandatory where harmonised standards do not exist and common specifications are not available, or where the provider has applied only part of a harmonised standard. As of October 2026 the only referenced standard is EN 18286:2026 (QMS): flag whether applying it is enough to open the Annex VI route as an open question for counsel and the notified body, not as settled.
 
 ## Registration (Art. 49)
 
@@ -189,7 +190,7 @@ Overall readiness: [Ready for conformity assessment / Significant gaps / Critica
 ## Limits of this analysis
 
 - Annex IV technical documentation requirements are detailed; this analysis flags applicability but does not draft the document.
-- The conformity assessment procedure choice depends on factors not fully captured here (e.g., availability of harmonised standards once published — currently under preparation by CEN-CENELEC JTC 21).
+- The conformity assessment procedure choice depends on factors not fully captured here (e.g., availability of harmonised standards: only EN 18286:2026 (QMS) is referenced so far, by Implementing Decision (EU) 2026/2274; standards for the other Section 2 requirements are still under preparation by CEN-CENELEC JTC 21).
 - Notified body involvement is required only in specific cases; verify against Art. 43 and Annex VII.
 
 ## Disclaimer
