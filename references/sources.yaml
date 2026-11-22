@@ -435,6 +435,41 @@ sources:
       Re-check against the adopted text and promote once published in
       the OJ.
 
+  - id: ec-art27-fria-template-draft-2026
+    title: "Draft Explanatory Notice and template for the fundamental rights impact assessment under Article 27(5) of the AI Act - European Commission, AI Office (16 November 2026)"
+    type: commission-guidelines-draft
+    url: https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act
+    accessed: 2026-11-22
+    sha256: null
+    license: public-domain-eu-doc
+    binary_path: null
+    excerpt_paths: []
+    status: draft-consultation
+    consultation_deadline: 2027-01-15
+    notes: |
+      Published 16 November 2026 for public feedback until 15 January
+      2027. Drawn up by the AI Office under Article 27(5) with input
+      from the EU Agency for Fundamental Rights (FRA). Two parts: a
+      draft questionnaire template following the structure of Art.
+      27(1), and a draft explanatory notice on which deployers must
+      carry out a FRIA, when, and how the obligation relates to the
+      provider's obligations.
+      Separate open call for deployers who will be subject to Art. 27
+      to test the draft template on one of their own systems:
+      expressions of interest to the AI Office by 4 December 2026.
+      Participation is voluntary and without prejudice to AI Act
+      obligations.
+      NOT BINDING while in draft. Once finalised, it becomes the
+      template deployers must use to prepare the FRIA and notify its
+      results to the market surveillance authority under Art. 27(3);
+      the Commission also plans an automated version on the AI Act
+      Single Information Platform. The Commission page confirms the
+      Art. 27 obligation applies from 2 December 2027.
+      When the final template is published: promote to `status: final`,
+      add a textual extract under `references/extracts/`, and update
+      the FRIA structure in `tasks/check-deployer-obligations.md` with
+      the template's fields.
+
 # Recommended validation tools and resources (used to test the skill's outputs)
 validation_resources:
   - id: ec-compliance-checker

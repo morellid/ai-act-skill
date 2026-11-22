@@ -88,6 +88,8 @@ If none of (i)–(iii) applies, FRIA is **not** required (Art. 26 still applies 
 
 **Template (Art. 27(5))**: the AI Office is to provide a template for the notification of the FRIA outcome.
 
+**Draft template status**: the Commission published a **draft** template and explanatory notice on 16 November 2026. It is **not yet binding**; once final, deployers must use it to prepare the FRIA and notify the results under Art. 27(3). Public feedback is open until **15 January 2027**, and deployers that will be subject to Art. 27 can volunteer to test the template by expressing interest to the AI Office by **4 December 2026**. The Art. 27 obligation itself applies from 2 December 2027 (Annex III date, Reg. (EU) 2026/1744). Deployers in scope may want to monitor the consultation or take part in the testing. Until the template is final, use the structure in Step 3 as a working draft. See `sources.yaml` id `ec-art27-fria-template-draft-2026`.
+
 ### Step 3 — FRIA structure (proposed)
 
 ```markdown
