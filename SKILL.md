@@ -74,6 +74,7 @@ Pending (track, treat as indicative until finalised):
 
 - **Commission draft guidelines on the classification of high-risk AI systems** (19 May 2026) — `sources.yaml` id `ec-high-risk-classification-guidelines-draft-2026`. Required by Article 96 AI Act. Targeted consultation closed 23 July 2026; final version expected Q3 2026, ahead of the 2 December 2027 Annex III date. Will become the Commission's official (non-binding) interpretation of Article 6 and Annex III (safety-component test, Annex III use-case examples, Art. 6(3) derogation) once final; promote to a primary source with a textual extract at that point.
 - **Draft Commission implementing regulation on proceedings under Articles 75c and 75d** (Ares(2026)9589403, 12 October 2026) — `sources.yaml` id `ec-implementing-act-art-75c-75d-draft-2026`. Feedback until 9 November 2026; adoption planned Q4 2026. Content not yet verified against the official text: do not cite until adopted.
+- **Commission draft FRIA template and explanatory notice under Article 27(5)** (16 November 2026) - `sources.yaml` id `ec-art27-fria-template-draft-2026`. Not yet binding. Feedback until 15 January 2027; call for deployers to test it, expressions of interest by 4 December 2026. Once final, deployers must use it to prepare the FRIA and notify the results under Article 27(3).
 
 Textual extracts of the cited articles in [`references/extracts/`](references/extracts/).
 
